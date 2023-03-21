@@ -10,6 +10,7 @@ function App() {
      <Body />
 
      <h1>sample text</h1>
+     <h1>sample text ulit</h1>
     </div>
   );
 }
