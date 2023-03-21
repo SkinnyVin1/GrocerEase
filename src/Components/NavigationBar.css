@@ -1,0 +1,29 @@
+.navibody{
+    position: fixed;
+    left: 0;
+    height: 100%;
+    width: 10%;
+
+    /* background-color: aquamarine; */
+    box-shadow: -3px 1px 19px 3px rgba(0,0,0,0.10);
+    -webkit-box-shadow: -3px 1px 19px 3px rgba(0,0,0,0.15);
+    -moz-box-shadow: -3px 1px 19px 3px rgba(0,0,0,0.48);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.logo{
+    width: 100%;
+    text-align: center;
+}
+.logo img{
+    max-width: 70%;
+
+    /* padding: 0 20px 0 20px; */
+}
