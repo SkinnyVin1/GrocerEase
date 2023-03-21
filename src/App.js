@@ -8,6 +8,8 @@ function App() {
     <div className="App">
      <Navigationbar />
      <Body />
+
+     <h1>sample text</h1>
     </div>
   );
 }
