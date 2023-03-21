@@ -1,0 +1,33 @@
+.category-card{
+    width: 180px;
+    height:250px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+
+    background-color: #DAF5DA;
+    border-radius: 15px;
+
+    
+}
+.category-card span{
+    font-size: 1.1rem;
+}
+.category-card img{
+    max-width: 100%;
+    width: 114px;
+    padding-bottom: 10px;
+}@keyframes categIcon {
+	0% {
+		transform: scale(1);
+	}
+
+	100% {
+		transform: scale(1.1);
+	}
+}
+.category-card img:hover {
+    animation: categIcon .4s ease-in-out 0s 1 normal forwards;
+}
