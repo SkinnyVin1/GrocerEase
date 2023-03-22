@@ -6,7 +6,7 @@ import Cart from "../Images/146-basket-trolley-shopping-card-outline.png";
 import Heart from "../Images/heart.png";
 
 const Navigationbar = () => {
-<<<<<<< HEAD
+// <<<<<<< HEAD
     return ( 
         <div className='navibody'>
             <div className="logo">
