@@ -38,7 +38,7 @@
     -o-transition: all .3s ease;
 }
 .heroBody:hover img{
-    opacity: .3;
+    /* opacity: .3; */
     /* background-color: #daf5da3a; */
     transform: scale(1.05);
     -webkit-transform: scale(1.1);

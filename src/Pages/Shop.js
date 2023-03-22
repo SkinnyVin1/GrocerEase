@@ -1,6 +1,8 @@
+import Slider from "../Components/ShopSlider";
+
 const Shop = () => {
     return ( 
-        <h1>Shopping Page</h1>
+        <Slider></Slider>
      );
 }
  
