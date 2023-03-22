@@ -1,10 +1,10 @@
 import Navigationbar from "./Components/NavigationBar";
 import { BrowserRouter, Routes, Route, Navigate } from  "react-router-dom";
+import Home from "./Pages/Home";
 import AboutUs from './Pages/AboutUs';
 import Dashboard from './Pages/Dashboard';
 import Orders from './Pages/Orders';
 import Shop from './Pages/Shop';
-import Home from "./Pages/Home";
 
 
 function App() {

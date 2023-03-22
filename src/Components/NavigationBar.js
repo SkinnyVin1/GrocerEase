@@ -14,10 +14,9 @@ const Navigationbar = () => {
             <div className="routes">
                 <ul>
                     <li><Link to ='/'> Home</Link></li>
-                    <li><Link to ='/AboutUs'>About Us</Link></li> 
                     <li><Link to ='/Shop'>Shop</Link></li> 
+                    <li><Link to ='/AboutUs'>About Us</Link></li> 
                     <li><Link to ='/Orders'>Orders</Link></li> 
-                    <li><Link to ='/Dashboard'>Dashboard</Link></li>  
                 </ul>
             </div>
             <div className="icons">
