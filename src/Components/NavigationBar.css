@@ -23,7 +23,7 @@
     text-align: center;
 }
 .logo img{
-    max-width: 70%;
+    max-width: 55%;
 
     /* padding: 0 20px 0 20px; */
 }
@@ -39,4 +39,31 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+.routes{
+    width: 100%;
+}
+.routes ul li{
+    list-style: none;
+    text-align: center;
+    width: 100%;
+    line-height: 55px;
+
+    transition: .2s ease-in-out;
+}
+.routes ul li a {
+    
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-decoration: none;
+    color:#201e1e;    
+    text-transform: uppercase;
+
+    /* cursor: url("../Images/click.gif"),default; */
+}
+.routes ul li:hover{
+    background-color: #8dd08a;
+}
+.routes a:active .routes li{
+    background-color: #8dd08a;
 }

@@ -1,8 +1,9 @@
 .category-card{
-    width: 180px;
-    height:250px;
+    width: 150px;
+    height:180px;
 
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content:center;
     align-items: center;
@@ -17,8 +18,8 @@
     font-size: 1.1rem;
 }
 .category-card img{
-    max-width: 100%;
-    width: 114px;
+    max-width: 80%;
+    width: 75px;
     padding-bottom: 10px;
     transition: all .1s ease-in-out;
 }
