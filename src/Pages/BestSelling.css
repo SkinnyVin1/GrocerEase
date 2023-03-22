@@ -1,0 +1,16 @@
+.bestSellingBody{
+    height: 100vh;
+    width: 92%;
+    margin-left: 8%;
+    padding: 40px 40px 40px 40px;
+    
+
+}
+.bestSellingBody h1{
+    font-weight: 400;
+    padding-bottom: 30px;
+}
+.categ{
+    display: flex;
+    justify-content: space-between;
+}

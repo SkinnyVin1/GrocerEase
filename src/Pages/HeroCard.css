@@ -1,0 +1,53 @@
+.heroWrapper{
+    height: 100%;
+    width: 100%;
+    display: flex;
+
+    
+    
+}
+
+.heroBody {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+
+    border-radius: 15px;
+    margin-right :20px;
+
+    transition: .3s ease;
+
+    /* background-color: #daf5da3a; */
+       
+}
+.heroBody h1{
+    font-weight: 500;
+}
+.heroBody img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+}
+.heroBody:hover img{
+    opacity: .3;
+    /* background-color: #daf5da3a; */
+    transform: scale(1.05);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+.heroContent{
+    position: absolute;
+    left:5%;
+    top: 5%;
+}
