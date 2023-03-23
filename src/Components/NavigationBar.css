@@ -50,7 +50,8 @@
 }
 .routes ul li{
     list-style: none;
-    text-align: center;
+    text-align: end;
+    padding-right: 15px;
     width: 100%;
     line-height: 55px;
 
@@ -58,7 +59,7 @@
 }
 .routes ul li a {
     
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 400;
     text-decoration: none;
     color:#201e1e;    
@@ -68,6 +69,7 @@
 }
 .routes ul li:hover{
     background-color: #8dd08a;
+    padding-right: 25px;
 }
 .routes a:active .routes li{
     background-color: #8dd08a;
