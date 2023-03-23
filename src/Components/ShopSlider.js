@@ -36,6 +36,7 @@ const Slider = () => {
   return (
     <div className="slider">
         <div className='shopImages'>
+          
             <img src={images[currentImageIndex]} alt={`Image ${currentImageIndex}`} />
 
             <div className="buttons">
@@ -47,6 +48,8 @@ const Slider = () => {
                 </div>
             </div>
         </div>
+        <h1>basic
+        </h1>
     </div>
   );
 };

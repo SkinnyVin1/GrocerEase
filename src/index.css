@@ -28,11 +28,11 @@ Scroll Bar Style
 */
 
 ::-webkit-scrollbar{
-  width: 0.625rem;
+  width: 0.4rem;
 }
 
 ::-webkit-scrollbar-track{
-  background: var(--white-color);
+  background: #defddc;
 }
 
 ::-webkit-scrollbar-thumb{
