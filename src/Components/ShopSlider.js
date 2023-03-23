@@ -29,7 +29,7 @@ const Slider = () => {
     const prevIndex = currentImageIndex === 0 ? images.length - 1 : currentImageIndex - 1;
     setCurrentImageIndex(prevIndex);
     setBackground(
-      ['', '', '', '', ''].map((_, i) => (i === prevIndex ? 'black' : 'white'))
+      ['', '', '', '', ''].map((_, i) => (i === prevIndex ? 'green' : ''))
     );
   };
   
@@ -37,21 +37,21 @@ const Slider = () => {
     const nextIndex = (currentImageIndex + 1) % images.length;
     setCurrentImageIndex(nextIndex);
     setBackground(
-      ['', '', '', '', ''].map((_, i) => (i === nextIndex ? 'black' : 'white'))
+      ['', '', '', '', ''].map((_, i) => (i === nextIndex ? 'green' : ''))
     );
   };
   
   // For Pagination //
 
-  const [pagibackground, setBackground] = useState(['black', '', '', '', '']);
+  const [pagibackground, setBackground] = useState(['green', '', '', '', '']);
   useEffect(() => {
     const timer = setInterval(() => {
       const nextIndex = (currentImageIndex + 1) % 5; // cycle through the 5 images
       setCurrentImageIndex(nextIndex);
       setBackground(
-        ['', '', '', '', ''].map((_, i) => (i === nextIndex ? 'black' : 'white'))
+        ['', '', '', '', ''].map((_, i) => (i === nextIndex ? 'green' : ''))
       );
-    }, 3000); // change every 3 seconds
+    }, 5000); // change every 3 seconds
 
     return () => clearInterval(timer); // clean up the timer on unmount
   }, [currentImageIndex]);
@@ -62,31 +62,31 @@ const Slider = () => {
       case 'firstImg':
         setCurrentImageIndex(0);
         if (currentImageIndex >= 0){
-          setBackground(['black','white','white','white','white']);
+          setBackground(['green','','','','']);
         }
         break;
       case 'secondImg':
         setCurrentImageIndex(1);
         if (currentImageIndex >= 0){
-          setBackground(['white','black','white','white','white']);
+          setBackground(['','green','','','']);
         }
         break;
       case 'thirdImg':
         setCurrentImageIndex(2);
         if (currentImageIndex >= 0){
-          setBackground(['white','white','black','white','white']);
+          setBackground(['','','green','','']);
         }
         break;
       case 'fourthImg':
         setCurrentImageIndex(3);
         if (currentImageIndex >= 0){
-          setBackground(['white','white','white','black','white']);
+          setBackground(['','','','green','']);
         }
         break;
       case 'fifthImg':
         setCurrentImageIndex(4);
         if (currentImageIndex >= 0){
-          setBackground(['white','white','white','white','black']);
+          setBackground(['','','','','green']);
         }
         break;
       default:
@@ -107,13 +107,13 @@ const Slider = () => {
                     <button onClick={goToNextImage} className="rightbtn"><i class="fa-solid fa-chevron-right"></i></button>
                 </div>
             </div>
-        </div>
-        <div className='pagination'>
-          <button id='firstImg' onClick={theActive} style={{background: pagibackground[0]}}></button>
-          <button id='secondImg' onClick={theActive} style={{background: pagibackground[1]}}></button>
-          <button id='thirdImg' onClick={theActive} style={{background: pagibackground[2]}}></button>
-          <button id='fourthImg' onClick={theActive} style={{background: pagibackground[3]}}></button>
-          <button id='fifthImg' onClick={theActive} style={{background: pagibackground[4]}}></button>
+          <div className='pagination'>
+            <button id='firstImg' onClick={theActive} style={{background: pagibackground[0]}}></button>
+            <button id='secondImg' onClick={theActive} style={{background: pagibackground[1]}}></button>
+            <button id='thirdImg' onClick={theActive} style={{background: pagibackground[2]}}></button>
+            <button id='fourthImg' onClick={theActive} style={{background: pagibackground[3]}}></button>
+            <button id='fifthImg' onClick={theActive} style={{background: pagibackground[4]}}></button>
+          </div>
         </div>
     </div>
   );

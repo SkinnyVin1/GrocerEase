@@ -1,10 +1,7 @@
 .slider{
     width: 92%;
     height: 100vh;
-    margin-left: 8%;
-    display: inline-block;
-    margin-top: 40px;
-    
+    margin-left: 8%;    
 }
 .shopImages img{
     width: 100%;
@@ -12,23 +9,13 @@
 }
 .shopImages{
     width: 95%;
-    height: 350px;
+    height: 450px;
     position: relative;
     display: inline-block;
-    margin-top: 40px;
+    margin-top: 30px;
     margin-left: 35px;
-    border-radius: 30px !important;
+    border-radius: 30px;
     overflow: hidden;
-    position: absolute;
-    bottom: -20%;
-}
-.shopImages{
-    width: 95%;
-    height: 450px;
-    margin: auto;
-    position: relative;
-    overflow: hidden;
-    border-radius: 15px;
 }
 .buttons button{
     background: none;
@@ -54,12 +41,6 @@
     padding-right: 20px;
     text-align: right;
 }
-/* .btnContainer1:hover{
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.266), transparent);
-}
-.btnContainer2:hover{
-    background: linear-gradient(to left, rgba(0, 0, 0, 0.266), transparent);
-} */
 .buttons button i {
     font-size: 2rem;
     color: rgba(0, 0, 0, 0.311);
@@ -76,10 +57,16 @@
 .pagination button{
     background: none;
     border: none;
-    border: 1px solid black;
+    border: 1px solid rgba(0, 0, 0, 0.352);
     width: 40px;
     height: 5px;
     margin-right: 5px;
     border-radius: 2px;
     cursor: pointer;
+}
+.pagination{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
 }
