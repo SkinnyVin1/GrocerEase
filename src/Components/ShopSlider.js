@@ -26,12 +26,75 @@ const Slider = () => {
   }, [currentImageIndex]);
 
   const goToPreviousImage = () => {
-    setCurrentImageIndex(currentImageIndex === 0 ? images.length - 1 : currentImageIndex - 1);
+    const prevIndex = currentImageIndex === 0 ? images.length - 1 : currentImageIndex - 1;
+    setCurrentImageIndex(prevIndex);
+    setBackground(
+      ['', '', '', '', ''].map((_, i) => (i === prevIndex ? 'black' : 'white'))
+    );
   };
-
+  
   const goToNextImage = () => {
-    setCurrentImageIndex((currentImageIndex + 1) % images.length);
+    const nextIndex = (currentImageIndex + 1) % images.length;
+    setCurrentImageIndex(nextIndex);
+    setBackground(
+      ['', '', '', '', ''].map((_, i) => (i === nextIndex ? 'black' : 'white'))
+    );
   };
+  
+
+
+  // For Pagination //
+
+  const [pagibackground, setBackground] = useState(['black', '', '', '', '']);
+  useEffect(() => {
+    const timer = setInterval(() => {
+      const nextIndex = (currentImageIndex + 1) % 5; // cycle through the 5 images
+      setCurrentImageIndex(nextIndex);
+      setBackground(
+        ['', '', '', '', ''].map((_, i) => (i === nextIndex ? 'black' : 'white'))
+      );
+    }, 3000); // change every 3 seconds
+
+    return () => clearInterval(timer); // clean up the timer on unmount
+  }, [currentImageIndex]);
+
+  const theActive = (event) => {
+    const btnId = event.target.id;
+    switch (btnId){
+      case 'firstImg':
+        setCurrentImageIndex(0);
+        if (currentImageIndex >= 0){
+          setBackground(['black','white','white','white','white']);
+        }
+        break;
+      case 'secondImg':
+        setCurrentImageIndex(1);
+        if (currentImageIndex >= 0){
+          setBackground(['white','black','white','white','white']);
+        }
+        break;
+      case 'thirdImg':
+        setCurrentImageIndex(2);
+        if (currentImageIndex >= 0){
+          setBackground(['white','white','black','white','white']);
+        }
+        break;
+      case 'fourthImg':
+        setCurrentImageIndex(3);
+        if (currentImageIndex >= 0){
+          setBackground(['white','white','white','black','white']);
+        }
+        break;
+      case 'fifthImg':
+        setCurrentImageIndex(4);
+        if (currentImageIndex >= 0){
+          setBackground(['white','white','white','white','black']);
+        }
+        break;
+      default:
+        break;
+    }
+  }
 
   return (
     <div className="slider">
@@ -46,6 +109,13 @@ const Slider = () => {
                     <button onClick={goToNextImage} className="rightbtn"><i class="fa-solid fa-chevron-right"></i></button>
                 </div>
             </div>
+        </div>
+        <div className='pagination'>
+          <button id='firstImg' onClick={theActive} style={{background: pagibackground[0]}}></button>
+          <button id='secondImg' onClick={theActive} style={{background: pagibackground[1]}}></button>
+          <button id='thirdImg' onClick={theActive} style={{background: pagibackground[2]}}></button>
+          <button id='fourthImg' onClick={theActive} style={{background: pagibackground[3]}}></button>
+          <button id='fifthImg' onClick={theActive} style={{background: pagibackground[4]}}></button>
         </div>
     </div>
   );
