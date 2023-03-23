@@ -41,8 +41,6 @@ const Slider = () => {
     );
   };
   
-
-
   // For Pagination //
 
   const [pagibackground, setBackground] = useState(['black', '', '', '', '']);
@@ -99,7 +97,6 @@ const Slider = () => {
   return (
     <div className="slider">
         <div className='shopImages'>
-          
             <img src={images[currentImageIndex]} alt={`Image ${currentImageIndex}`} />
 
             <div className="buttons">
@@ -111,7 +108,6 @@ const Slider = () => {
                 </div>
             </div>
         </div>
-<<<<<<< HEAD
         <div className='pagination'>
           <button id='firstImg' onClick={theActive} style={{background: pagibackground[0]}}></button>
           <button id='secondImg' onClick={theActive} style={{background: pagibackground[1]}}></button>
@@ -119,10 +115,6 @@ const Slider = () => {
           <button id='fourthImg' onClick={theActive} style={{background: pagibackground[3]}}></button>
           <button id='fifthImg' onClick={theActive} style={{background: pagibackground[4]}}></button>
         </div>
-=======
-        <h1>basic
-        </h1>
->>>>>>> e90172eb6071eae35e08882df9cd70f20d1be46f
     </div>
   );
 };
