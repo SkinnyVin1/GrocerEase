@@ -1,0 +1,51 @@
+.loginBody{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+
+    overflow: hidden;
+    background-color: #80c187;
+    z-index: 100;
+}
+#bg{
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    opacity: .5;
+}
+.loginContainer{
+    width: 100%;
+    height: 100%;
+
+    display: grid;
+    place-items: center;
+    /* background-image: url(../Images/loginbg.png);
+    object-fit:scale-down; */
+}
+.loginForm{
+    width: 60vw;
+    height: 680px;
+    /* padding: 0 40px 0 40px; */
+
+    background-color: rgb(255, 255, 255);
+
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.imgContent{
+    position: relative;
+
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+.loginForm .imgContent img{
+    position: absolute;
+    width: 90%;
+    bottom: 10%;
+}
+
+.lForm{
+    text-align: center;
+    padding-top: 40px;
+}
