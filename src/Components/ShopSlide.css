@@ -4,7 +4,7 @@
     width: 92%;
     height: 100 vh;
     margin-left: 8%;    
-    padding: 40px;
+    /* padding: 40px; */
 }
 .shopImages img{
     width: 100%;
@@ -17,8 +17,8 @@
     height: 450px;
     position: relative;
     display: inline-block;
-    margin-top: 30px;
-    margin-left: 35px;
+    /* margin-top: 30px;
+    margin-left: 35px; */
     /* border-radius: 30px; */
     overflow: hidden;
     cursor: pointer;
@@ -65,11 +65,12 @@
 .pagination button{
     background: none;
     border: none;
-    border: 1px solid rgba(0, 0, 0, 0.352);
-    width: 40px;
-    height: 5px;
-    margin-right: 5px;
-    border-radius: 2px;
+    /* border: 1px solid rgba(0, 0, 0, 0.352); */
+    background-color: #8dd08a91;
+    width: 13px;
+    height: 13px;
+    margin: 0 10px 0 10px;
+    border-radius: 50%;
     cursor: pointer;
 }
 .pagination{
