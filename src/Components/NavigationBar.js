@@ -31,20 +31,32 @@ const Navigationbar = () => {
         </ul>
       </div>
       <div className="icons">
-        <div className="icon-container">
-          <img src={Heart} alt="" />
-          <span>Wishlist</span>
-        </div>
-
-        <div className="icon-container">
-          <img src={Cart} alt="" />
-          <span>Cart</span>
-        </div>
-
-        <div className="icon-container">
-          <img src={Avatar} alt="" />
-          <span>Account</span>
-        </div>
+        <ul>
+          <li>
+            <Link to="/">
+              <div className="icon-container">
+                <img src={Heart} alt="" />
+                <span>Wishlist</span>
+              </div>
+            </Link>
+          </li>
+          <li>
+            <Link to="/">
+              <div className="icon-container">
+                <img src={Cart} alt="" />
+                <span>Cart</span>
+              </div>
+            </Link>
+          </li>
+          <li>
+            <Link to="/Login">
+              <div className="icon-container">
+                <img src={Avatar} alt="" />
+                <span>Account</span>
+              </div>
+            </Link>
+          </li>
+        </ul>
       </div>
     </div>
   );
