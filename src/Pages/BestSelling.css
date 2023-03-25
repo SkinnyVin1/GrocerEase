@@ -3,6 +3,13 @@
     width: 92%;
     margin-left: 8%;
     padding: 40px 40px 40px 40px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+
+
     
 
 }
@@ -14,4 +21,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+}
+.category-card{
+    flex: 1 1 150px !important;
+    margin: 30px !important;
 }
