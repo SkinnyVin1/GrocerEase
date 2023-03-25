@@ -1,6 +1,7 @@
-import Navigationbar from "./Components/NavigationBar";
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { useEffect } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom"
 import Home from "./Pages/Home";
+import Navigationbar from "./Components/NavigationBar";
 import AboutUs from "./Pages/AboutUs";
 import Dashboard from "./Pages/Dashboard";
 import Orders from "./Pages/Orders";
@@ -8,9 +9,20 @@ import Shop from "./Pages/Shop";
 import LoginPage from "./Pages/LoginPage";
 
 function App() {
+  function redirectToHomePage() {
+    window.location.href = "/";
+  }
+
+  useEffect(() => {
+    window.addEventListener("load", redirectToHomePage);
+    return () => {
+      window.removeEventListener("load", redirectToHomePage);
+    };
+  }, []);
+
   return (
     <BrowserRouter>
-      <div className="App">
+      <div>
         <Navigationbar />
         <Routes>
           <Route path="/" element={<Home />}></Route>

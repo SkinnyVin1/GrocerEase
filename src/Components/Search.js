@@ -2,11 +2,11 @@ import "../Components/ShopSlide.css";
 
 const SearchBar = () => {
     return (
-        <div>
-            {/* <form> */}
+        <div className="searchBar">
+            <form>
                 <input type="text" />
                 <button><i class="fa-solid fa-magnifying-glass"></i></button>
-            {/* </form> */}
+            </form>
         </div>
     );
 }

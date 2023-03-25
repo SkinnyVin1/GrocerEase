@@ -1,11 +1,21 @@
 import Logo from "../Images/logo.png";
 import "../Components/NavigationBar.css";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 import Avatar from "../Images/21-avatar-outline.png";
 import Cart from "../Images/146-basket-trolley-shopping-card-outline.png";
 import Heart from "../Images/heart.png";
 
 const Navigationbar = () => {
+  const [activeLink, setActiveLink] = useState('link1');
+  const changeColor = (link) => {
+    setActiveLink(link);
+  }
+  const linkStyle = (linkId) => {
+    return {
+      backgroundColor: activeLink === linkId ? '#8dd08a' : 'white',
+    };
+  }
   return (
     <div className="navibody">
       <div className="logo">
@@ -13,20 +23,20 @@ const Navigationbar = () => {
       </div>
       <div className="routes">
         <ul>
-          <li>
-            <Link to="/"> Home</Link>
+          <li style={linkStyle('link1')}>
+            <Link to="/" onClick={() => changeColor('link1')}>Home</Link>
           </li>
-          <li>
-            <Link to="/AboutUs">About Us</Link>
+          <li style={linkStyle('link2')}>
+            <Link to="/AboutUs" onClick={() => changeColor('link2')}>About Us</Link>
           </li>
-          <li>
-            <Link to="/Shop">Shop</Link>
+          <li style={linkStyle('link3')}>
+            <Link to="/Shop" onClick={() => changeColor('link3')}>Shop</Link>
           </li>
-          <li>
-            <Link to="/Orders">Orders</Link>
+          <li style={linkStyle('link4')}>
+            <Link to="/Orders" onClick={() => changeColor('link4')}>Orders</Link>
           </li>
-          <li>
-            <Link to="/Dashboard">Dashboard</Link>
+          <li style={linkStyle('link5')}>
+            <Link to="/Dashboard" onClick={() => changeColor('link5')}>Dashboard</Link>
           </li>
         </ul>
       </div>

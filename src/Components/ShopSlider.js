@@ -7,7 +7,7 @@ import image5 from "../Images/shop-images/slider5.jpg";
 import "../Components/ShopSlide.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
-const images = [image1, image2, image3, iymage4, image5];
+const images = [image1, image2, image3, image4, image5];
 
 const sentences = [
   "Coffee Lover's",
