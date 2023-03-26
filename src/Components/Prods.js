@@ -1,5 +1,16 @@
 import Item from "./Item";
-import Milk from "../Images/milk.png";
+
+import c1 from "../Images/shop-images/Products/c3.png"
+import c2 from "../Images/shop-images/Products/s2.png"
+import c3 from "../Images/shop-images/Products/aa.png"
+import c4 from "../Images/shop-images/Products/s3.png"
+import c5 from "../Images/shop-images/Products/c2.png"
+import c6 from "../Images/shop-images/Products/bb.png"
+import c7 from "../Images/shop-images/Products/m5.png"
+import c8 from "../Images/shop-images/Products/v1.png"
+import c9 from "../Images/shop-images/Products/m3.png"
+import c10 from "../Images/shop-images/Products/c1.png"
+
 import Cart from "../Images/146-basket-trolley-shopping-card-outline.png";
 import "../Components/Prods.css";
 
@@ -7,72 +18,72 @@ const Prods = () => {
   return (
     <div className="prodsItem">
       <Item
-        image={Milk}
+        image={c1}
+        stat="In Stock"
+        prodName="Ruffles"
+        price="179.18"
+        cart={Cart}
+      />
+      <Item
+        image={c2}
+        stat="In Stock"
+        prodName="Nivea"
+        price="179.18"
+        cart={Cart}
+      />
+      <Item
+        image={c3}
+        stat="In Stock"
+        prodName="Nescafe"
+        price="179.18"
+        cart={Cart}
+      />
+      <Item
+        image={c4}
+        stat="In Stock"
+        prodName="Cetaphil"
+        price="179.18"
+        cart={Cart}
+      />
+      <Item
+        image={c5}
+        stat="In Stock"
+        prodName="Oishi"
+        price="179.18"
+        cart={Cart}
+      />
+      <Item
+        image={c6}
+        stat="In Stock"
+        prodName="Nutella"
+        price="179.18"
+        cart={Cart}
+      />
+      <Item
+        image={c7}
+        stat="In Stock"
+        prodName="Bacon"
+        price="179.18"
+        cart={Cart}
+      />
+      <Item
+        image={c8}
         stat="In Stock"
         prodName="Bottled Milk"
         price="179.18"
         cart={Cart}
       />
       <Item
-        image={Milk}
+        image={c9}
         stat="In Stock"
-        prodName="Bottled Milk"
+        prodName="Chili"
         price="179.18"
         cart={Cart}
       />
       <Item
-        image={Milk}
+        image={c10}
         stat="In Stock"
-        prodName="Bottled Milk"
-        price="179.18"
-        cart={Cart}
-      />
-      <Item
-        image={Milk}
-        stat="In Stock"
-        prodName="Bottled Milk"
-        price="179.18"
-        cart={Cart}
-      />
-      <Item
-        image={Milk}
-        stat="In Stock"
-        prodName="Bottled Milk"
-        price="179.18"
-        cart={Cart}
-      />
-      <Item
-        image={Milk}
-        stat="In Stock"
-        prodName="Bottled Milk"
-        price="179.18"
-        cart={Cart}
-      />
-      <Item
-        image={Milk}
-        stat="In Stock"
-        prodName="Bottled Milk"
-        price="179.18"
-        cart={Cart}
-      />
-      <Item
-        image={Milk}
-        stat="In Stock"
-        prodName="Bottled Milk"
-        price="179.18"
-        cart={Cart}
-      />
-      <Item
-        image={Milk}
-        stat="In Stock"
-        prodName="Bottled Milk"
-        price="179.18"
-        cart={Cart}
-      />
-      <Item
-        image={Milk}
-        stat="In Stock"
-        prodName="Bottled Milk"
+        prodName="Meat"
         price="179.18"
         cart={Cart}
       />
