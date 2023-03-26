@@ -19,7 +19,6 @@
     width: 100%;
     /* border: 2px solid black; */
     border-radius: 15px;
-    height: 720px;
     display: grid;
     grid-template-columns: 100%;
     /* gap: 10px; */
@@ -32,6 +31,7 @@
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     font-size: 1.7rem;
+    /* height: 70px; */
 }
 .forFilter p{
     font-size: 1.3rem;
@@ -39,8 +39,10 @@
 .forFilter .Categs div{
     display: flex;
     justify-content: space-between;
+    align-content: space-around;
     margin: 30px;
     align-items: center;
+    height: 73px;
 }
 
 .nextProd{
@@ -63,6 +65,10 @@
     justify-content: space-between;
     margin-top: 40px;
     row-gap: 30px;
+}
+hr{
+    color: black;
+    height: 3px;
 }
 
 @media (max-width: 768px){
@@ -107,6 +113,7 @@
     }
     .forFilter .Categs div{
         margin: 10px;
+        height: 35px;
     }
     .forFilter p{
         font-size: 1rem;
