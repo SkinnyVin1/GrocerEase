@@ -14,7 +14,7 @@ const NewsLetterContent = (props) => {
           <input type="text" id="inputText" placeholder="Your Email" />
         </div>
       </div>
-      <img src={props.img} />
+      <img src={props.img} id="newsletterBg" />
     </div>
   );
 };

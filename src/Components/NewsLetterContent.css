@@ -72,3 +72,14 @@
     top: 30%;
     left: 5%;
 }
+
+
+@media (max-width: 1411px){
+    #newsletterBg{
+        height: 100%;
+    }
+    .textContent h1{
+        font-size: 2rem;
+    }
+
+}

@@ -11,3 +11,11 @@
     
     
 }
+
+@media(max-width:1411px){
+    .newsBody{
+        margin: 0;
+        width: 100%;
+        height: 30vh;
+    }
+}

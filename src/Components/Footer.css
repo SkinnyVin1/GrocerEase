@@ -60,3 +60,23 @@
 .follow ul li{
     font-size: 1.5rem;
 }
+
+@media (max-width: 1141px){
+    .footerBody{
+        width: 100%;
+        margin: 0;
+    }
+    .footerContenttop{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 10px;
+    }
+    /* .logo{
+        display: flex;
+        flex-direction: row;
+    } */
+    .logo img{
+        width: 150px;
+    }
+}
