@@ -3,7 +3,14 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import Item from "./Item";
 import Cart from "../Images/146-basket-trolley-shopping-card-outline.png";
 import "../Components/CardSwiper.css";
-import Milk from "../Images/milk.png";
+import popular from "../Images/shop-images/Products/s2.png"
+import popular1 from "../Images/shop-images/Products/d2.png"
+import popular2 from "../Images/shop-images/Products/c2.png"
+import popular3 from "../Images/shop-images/Products/p5.png"
+import popular4 from "../Images/shop-images/Products/s4.png"
+import popular5 from "../Images/shop-images/Products/c4.png"
+import popular6 from "../Images/shop-images/Products/d3.png"
+
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -27,63 +34,63 @@ const CardSwiper = () => {
       >
         <SwiperSlide className="item">
           <Item
-            image={Milk}
+            image={popular}
             stat="In Stock"
-            prodName="Bottled Milk"
+            prodName="Nivea"
             price="179.18"
             cart={Cart}
           />
         </SwiperSlide>
         <SwiperSlide className="item">
           <Item
-            image={Milk}
+            image={popular1}
             stat="In Stock"
-            prodName="Bottled Milk"
+            prodName="Purfiltre"
             price="179.18"
             cart={Cart}
           />
         </SwiperSlide>
         <SwiperSlide className="item">
           <Item
-            image={Milk}
+            image={popular2}
             stat="In Stock"
-            prodName="Bottled Milk"
+            prodName="Oishi"
             price="179.18"
             cart={Cart}
           />
         </SwiperSlide>
         <SwiperSlide className="item">
           <Item
-            image={Milk}
+            image={popular6}
             stat="In Stock"
-            prodName="Bottled Milk"
+            prodName="Magnolia"
             price="179.18"
             cart={Cart}
           />
         </SwiperSlide>
         <SwiperSlide className="item">
           <Item
-            image={Milk}
+            image={popular3}
             stat="In Stock"
-            prodName="Bottled Milk"
+            prodName="Monster"
             price="179.18"
             cart={Cart}
           />
         </SwiperSlide>
         <SwiperSlide className="item">
           <Item
-            image={Milk}
+            image={popular4}
             stat="In Stock"
-            prodName="Bottled Milk"
+            prodName="Garnier"
             price="179.18"
             cart={Cart}
           />
         </SwiperSlide>
         <SwiperSlide className="item">
           <Item
-            image={Milk}
+            image={popular5}
             stat="In Stock"
-            prodName="Bottled Milk"
+            prodName="Cheetos"
             price="179.18"
             cart={Cart}
           />
