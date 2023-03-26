@@ -20,7 +20,7 @@ const Product = () => {
                     <Item image={product1} stat="IN STOCK" prodName="Cola" price="50" cart={Cart}></Item>
                     <Item image={product1} stat="IN STOCK" prodName="Cola" price="50" cart={Cart}></Item>
                 </div>
-                <div>
+                <div className="ProductsCategs">
                     <ProdCat heading="Product Categories"
                     category1="Beverages"
                     category2="Chips & Snaks"
@@ -46,6 +46,16 @@ const Product = () => {
             </div>
             <div>
                 <div className="ProductItems prodItems3">
+                    <Item image={product1} stat="IN STOCK" prodName="Cola" price="50" cart={Cart}></Item>
+                    <Item image={product1} stat="IN STOCK" prodName="Cola" price="50" cart={Cart}></Item>
+                    <Item image={product1} stat="IN STOCK" prodName="Cola" price="50" cart={Cart}></Item>
+                    <Item image={product1} stat="IN STOCK" prodName="Cola" price="50" cart={Cart}></Item>
+                    <Item image={product1} stat="IN STOCK" prodName="Cola" price="50" cart={Cart}></Item>
+                    <Item image={product1} stat="IN STOCK" prodName="Cola" price="50" cart={Cart}></Item>
+                    <Item image={product1} stat="IN STOCK" prodName="Cola" price="50" cart={Cart}></Item>
+                    <Item image={product1} stat="IN STOCK" prodName="Cola" price="50" cart={Cart}></Item>
+                    <Item image={product1} stat="IN STOCK" prodName="Cola" price="50" cart={Cart}></Item>
+                    <Item image={product1} stat="IN STOCK" prodName="Cola" price="50" cart={Cart}></Item>
                     <Item image={product1} stat="IN STOCK" prodName="Cola" price="50" cart={Cart}></Item>
                     <Item image={product1} stat="IN STOCK" prodName="Cola" price="50" cart={Cart}></Item>
                     <Item image={product1} stat="IN STOCK" prodName="Cola" price="50" cart={Cart}></Item>

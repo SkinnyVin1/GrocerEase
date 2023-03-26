@@ -9,14 +9,14 @@ const Item = (props) => {
       <p className="stat">{props.stat}</p>
       <div className="prodName">
         <h1>{props.prodName}</h1>
-        <p className="star">
+        <div className="star">
           <i class="fa-solid fa-star"></i>
           <i class="fa-solid fa-star"></i>
           <i class="fa-solid fa-star"></i>
           <i class="fa-solid fa-star"></i>
           <i class="fa-regular fa-star"></i>
           (4.0)
-        </p>
+        </div>
       </div>
       <div className="btnContainer">
         <h1>₱{props.price}</h1>

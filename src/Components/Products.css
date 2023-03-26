@@ -22,7 +22,7 @@
     height: 720px;
     display: grid;
     grid-template-columns: 100%;
-    gap: 10px;
+    /* gap: 10px; */
     background-color: white;
 }
 .forFilter h2{
@@ -36,7 +36,7 @@
 .forFilter p{
     font-size: 1.3rem;
 }
-.forFilter div{
+.forFilter .Categs div{
     display: flex;
     justify-content: space-between;
     margin: 30px;
@@ -53,6 +53,7 @@
     height: 720px;
     overflow: hidden;
     border-radius: 15px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.334);
 }
 .prodItems2{
     margin-left: 15px;
@@ -61,4 +62,57 @@
 .prodItems3{
     justify-content: space-between;
     margin-top: 40px;
+    row-gap: 30px;
+}
+
+@media (max-width: 768px){
+    .product .shopHead{
+        font-size: 1.5rem;
+        margin: 20px 0 10px;
+    }
+    .shopNow{
+        grid-template-columns: 100%;
+    }
+    .nextProd{
+        grid-template-columns: 100%;
+    }
+    .prodItems3{
+        justify-content: center;
+        margin-top: 40px;
+        row-gap: 30px;
+    }
+    .ProductItems{
+        gap: 20px;
+        grid-row-start: 2;
+        justify-content: center;
+    }
+    
+    .ProductsCategs{
+        grid-row-start: 1;
+    }
+    .forFilter{
+        display: block;
+        height: 220px;
+        margin-bottom: 20px;
+    }
+    .forFilter h2{
+        padding: 10px 0;
+        font-size: 1.3rem;
+        height: 50px;
+    }
+    .forFilter .Categs{
+        display: grid;
+        justify-content: space-around;
+        grid-template-columns: 50% 50%;
+    }
+    .forFilter .Categs div{
+        margin: 10px;
+    }
+    .forFilter p{
+        font-size: 1rem;
+    }
+    .nextProdImage img{
+        height: 420px;
+        margin-bottom: 40px;
+    }
 }

@@ -74,3 +74,9 @@
 .routes a:active .routes li{
     background-color: #8dd08a;
 }
+
+@media (max-width: 768px){
+    .navibody{
+        display: none;
+    }
+}
