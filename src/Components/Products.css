@@ -63,12 +63,30 @@
 }
 .prodItems3{
     justify-content: space-between;
-    margin-top: 40px;
     row-gap: 30px;
 }
+.hrHeading{
+    position: relative;
+    margin: 40px 0;
+    width: 100%;
+    height: 10px;
+    /* background-color: green; */
+    /* display: inline-block; */
+}
 hr{
-    color: black;
+    background: none;
+    border: none;
     height: 3px;
+    background-color: green;
+}
+.hrHeading p{
+    position: absolute;
+    top: -12.5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #eee;
+    padding: 0 5px;
+    font-size: 1.2rem;
 }
 
 @media (max-width: 768px){

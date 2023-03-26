@@ -44,7 +44,10 @@ const Product = () => {
                     <Item image={product1} stat="IN STOCK" prodName="Cola" price="50" cart={Cart}></Item>
                 </div>
             </div>
-            <hr />
+            <div className="hrHeading">
+                <hr />
+                <p>DISCOVER</p>
+            </div>
             <div>
                 <div className="ProductItems prodItems3">
                     <Item image={product1} stat="IN STOCK" prodName="Cola" price="50" cart={Cart}></Item>
