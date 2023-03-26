@@ -1,5 +1,8 @@
 import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
+// import SwiperCore, { Breakpoints } from "swiper";
+// SwiperCore.use([Breakpoints]);
+
 import Item from "./Item";
 import Cart from "../Images/146-basket-trolley-shopping-card-outline.png";
 import "../Components/CardSwiper.css";
@@ -31,6 +34,24 @@ const CardSwiper = () => {
         // scrollbar={{ draggable: true }}
         onSwiper={(swiper) => console.log(swiper)}
         onSlideChange={() => console.log("slide change")}
+        breakpoints={{
+          375: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          540: {
+            slidesPerView: 3,
+            spaceBetween: 60,
+          },
+          885: {
+            slidesPerView: 3,
+            // spaceBetween: 40,
+          },
+          1023: {
+            slidesPerView: 6,
+            // spaceBetween: 50,
+          },
+        }}
       >
         <SwiperSlide className="item">
           <Item

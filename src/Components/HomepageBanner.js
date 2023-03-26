@@ -1,16 +1,16 @@
 import "../Components/HomepageBanner.css";
 import BannerImg1 from "../Images/slider-2-2.jpg";
 
-const HomepageBanner = () => {
+const HomepageBanner = (props) => {
   return (
     <div className="bannerBod">
       <div className="container">
-        <img src={BannerImg1} />
+        <img src={props.image} />
         <div className="bannerContent">
           <h1>
-            Pure Coffe <br /> Big Discount
+            {props.title1} <br /> {props.title2}
           </h1>
-          <p>Save up to 35% on your first order</p>
+          <p>{props.caption}</p>
         </div>
       </div>
     </div>

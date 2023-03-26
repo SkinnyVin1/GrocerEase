@@ -1,6 +1,6 @@
 .bannerBod{
     width: 100%;
-    height: 45%;
+    height: 60vh;
 
     display: grid;
     place-items:center;
