@@ -4,6 +4,7 @@
 
     display: grid;
     place-items:center;
+    margin-bottom: 40px;
 }
 
 .container{
@@ -18,7 +19,7 @@
 .container img{
     width: 100%;
     position: absolute; 
-    bottom: -15%;
+    /* bottom: -15%; */
     
 }
 .bannerContent{
@@ -30,7 +31,7 @@
 .bannerContent h1{
 
     color: #253D4E;
-    font-size: 4em;
+    font-size: 55px;
     font-weight: 500;
     line-height: 65px;
 }

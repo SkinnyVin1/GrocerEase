@@ -17,7 +17,7 @@ const CardSwiper = () => {
       <Swiper
         className="swiper"
         modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
-        spaceBetween={10}
+        spaceBetween={0}
         slidesPerView={6}
         // navigation
         // pagination={{ clickable: true }}
@@ -29,7 +29,7 @@ const CardSwiper = () => {
           <Item
             image={Milk}
             stat="In Stock"
-            prodName="Fresh Bottled Natural Milk"
+            prodName="Bottled Milk"
             price="179.18"
             cart={Cart}
           />
@@ -38,7 +38,7 @@ const CardSwiper = () => {
           <Item
             image={Milk}
             stat="In Stock"
-            prodName="Fresh Bottled Natural Milk"
+            prodName="Bottled Milk"
             price="179.18"
             cart={Cart}
           />
@@ -47,7 +47,7 @@ const CardSwiper = () => {
           <Item
             image={Milk}
             stat="In Stock"
-            prodName="Fresh Bottled Natural Milk"
+            prodName="Bottled Milk"
             price="179.18"
             cart={Cart}
           />
@@ -56,7 +56,7 @@ const CardSwiper = () => {
           <Item
             image={Milk}
             stat="In Stock"
-            prodName="Fresh Bottled Natural Milk"
+            prodName="Bottled Milk"
             price="179.18"
             cart={Cart}
           />
@@ -65,7 +65,7 @@ const CardSwiper = () => {
           <Item
             image={Milk}
             stat="In Stock"
-            prodName="Fresh Bottled Natural Milk"
+            prodName="Bottled Milk"
             price="179.18"
             cart={Cart}
           />
@@ -74,7 +74,7 @@ const CardSwiper = () => {
           <Item
             image={Milk}
             stat="In Stock"
-            prodName="Fresh Bottled Natural Milk"
+            prodName="Bottled Milk"
             price="179.18"
             cart={Cart}
           />
@@ -83,7 +83,7 @@ const CardSwiper = () => {
           <Item
             image={Milk}
             stat="In Stock"
-            prodName="Fresh Bottled Natural Milk"
+            prodName="Bottled Milk"
             price="179.18"
             cart={Cart}
           />
