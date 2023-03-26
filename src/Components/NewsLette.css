@@ -1,0 +1,13 @@
+.newsBody{
+    width: 92%;
+    height: 60vh;
+
+    margin-left: 8%;
+    padding: 40px;
+
+    display: grid;
+    place-items: center;
+
+    
+    
+}

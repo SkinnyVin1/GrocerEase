@@ -1,0 +1,58 @@
+.footerBody{
+    width: 92%;
+    height: auto;
+    margin-left: 8%;
+    padding: 0 40px 0 40px;
+
+}
+.footerContenttop{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    place-items: center;
+}
+/* .logo img{
+    width: 45%;
+} */
+.logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+.company li, .information li, .account li, .payment li{
+    padding: 5px 0 5px 0;
+}
+
+.logo p.slogan{
+    font-size: 1.1rem;
+    font-style: italic;
+}
+
+.footerContentBottom{
+    margin-top: 10px;
+    height: 50px;
+
+    border: solid;
+    border-width: 1px 0 0 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.follow{
+
+    display: flex;
+    /* flex-direction: row; */
+    align-items: center;
+}
+.follow p{
+    padding-right: 10px;
+}
+.follow ul{
+    display: flex;
+    gap: 15px;
+}
+.follow ul li{
+    font-size: 1.5rem;
+}

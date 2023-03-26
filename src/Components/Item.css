@@ -44,20 +44,14 @@
     background-color: #DAF5DA;
     border-radius: 5px;
     cursor: pointer;
-}
-@keyframes btn {
-	0% {
-		transform: scale(1);
-		transform-origin: 50% 100%;
-	}
 
-	100% {
-		transform: scale(1.05);
-		transform-origin: 50% 100%;
-	}
+    transition: .15s ease-in;
 }
+
+
 .btnContainer button:hover{
-    animation: btn .2s ease 0s 1 normal forwards;
+    background-color: rgba(0, 128, 0, 0.642);
+    color: white;
 }
 
 .btnContainer button img{
