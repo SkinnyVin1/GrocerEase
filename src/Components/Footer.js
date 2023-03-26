@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="footerContenttop">
         <div className="logo">
           <img src={Logo} />
-          <p className="slogan">Shop fresh, shop easy with GrocerEase</p>
+          <p className="slogan">"Shop fresh, shop easy with GrocerEase"</p>
           <p>
             <b>Address:</b>
             5171 W Campbell Ave undefined Kent, Utah 53127 United States

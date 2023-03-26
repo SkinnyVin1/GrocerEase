@@ -10,23 +10,27 @@
     grid-template-columns: 20% 20% 20% 20% 20%;
     place-items: center;
 }
-/* .logo img{
-    width: 45%;
-} */
+.logo img{
+    width: 40%;
+}
 .logo{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
     gap: 10px;
+    
 }
 .company li, .information li, .account li, .payment li{
     padding: 5px 0 5px 0;
 }
 
 .logo p.slogan{
-    font-size: 1.1rem;
+    
+    font-size: .9rem;
     font-style: italic;
+    font-weight: 600;
+    text-transform: uppercase;
 }
 
 .footerContentBottom{
