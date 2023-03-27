@@ -1,7 +1,7 @@
 .navForMobile, #check{
     display: none;
 }
-@media (max-width: 780px){
+@media (max-width: 1411px){
     .navForMobile{
         display: grid;
         grid-template-columns: auto auto auto;
