@@ -1,10 +1,7 @@
 .heroWrapper{
     height: 100%;
     width: 100%;
-    display: flex;
-
-    
-    
+    display: flex;    
 }
 
 .heroBody {
@@ -16,10 +13,7 @@
     border-radius: 15px;
     margin-right :20px;
 
-    transition: .3s ease;
-
-    /* background-color: #daf5da3a; */
-       
+    transition: .3s ease;   
 }
 .heroBody h1{
     font-weight: 500;
@@ -50,4 +44,12 @@
     position: absolute;
     left:5%;
     top: 5%;
+}
+
+@media (max-width: 1411px){
+    
+    .heroWrapper{
+        flex-direction: column;
+        gap: 20px;
+    }
 }

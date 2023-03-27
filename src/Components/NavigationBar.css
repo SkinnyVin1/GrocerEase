@@ -75,7 +75,7 @@
     background-color: #8dd08a;
 }
 
-@media (max-width: 768px){
+@media (max-width: 1411px){
     .navibody{
         display: none;
     }

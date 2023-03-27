@@ -1,6 +1,6 @@
 import "../Components/ThirdSection.css";
 import HomepageBanner from "./HomepageBanner";
-import ProdCat from "./ProductCategory";
+import AdImg from "../Images/PR.jpg";
 import Prods from "./Prods";
 import BannerImg1 from "../Images/slider-2-2.jpg";
 
@@ -17,16 +17,9 @@ const ThirdSectionHomepage = () => {
         <div className="prods">
           <Prods />
         </div>
-        <div className="filter">
-          <ProdCat
-            heading="Product Categories"
-            category1="Beverages"
-            category2="Chips & Snaks"
-            category3="Health & Beauty"
-            category4="Meats"
-            category5="Milks & Daries"
-            category6="Vegetables"
-          />
+        <div className="ad">
+          <h2>Freshly Produce Orange Juice</h2>
+          <img src={AdImg} alt="" />
         </div>
       </div>
     </div>

@@ -26,3 +26,17 @@
     flex: 1 1 150px !important;
     margin: 30px !important;
 }
+
+@media (max-width: 1411px){
+    .bestSellingBody{
+        width: 100%;
+        margin: 0;
+        height: auto;
+    }
+    .categ{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 20% 20% 20% 20% 20% ;
+        place-items: center;
+    }
+}

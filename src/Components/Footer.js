@@ -8,21 +8,23 @@ const Footer = () => {
       <div className="footerContenttop">
         <div className="logo">
           <img src={Logo} />
-          <p className="slogan">Shop fresh, shop easy with GrocerEase</p>
-          <p>
-            <b>Address:</b>
-            5171 W Campbell Ave undefined Kent, Utah 53127 United States
-          </p>
+          <p className="slogan">"Shop fresh, shop easy with GrocerEase"</p>
+          {/* <div className="textContent">
+            <p>
+              <b>Address:</b>
+              5171 W Campbell Ave undefined Kent, Utah 53127 United States
+            </p>
 
-          <p>
-            <b>Email:</b>
-            grocerease@hop.com
-          </p>
+            <p>
+              <b>Email:</b>
+              grocerease@hop.com
+            </p>
 
-          <p>
-            <b>Call Us:</b>
-            (+91) - 540-025-124553
-          </p>
+            <p>
+              <b>Call Us:</b>
+              (+91) - 540-025-124553
+            </p>
+          </div> */}
         </div>
         <div className="company">
           <h2>Company</h2>

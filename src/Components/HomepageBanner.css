@@ -39,3 +39,19 @@
     color: #767B76;
     font-size: 2rem;
 }
+
+@media (max-width: 1411px){
+    .bannerBod{
+        height: 20%;
+    }
+    .bannerContent{
+        top: 5%;
+        left: 5%;
+    }
+    .container img{
+        left: -150px;
+        width: auto;
+        height: 100%;
+    }
+    
+}
