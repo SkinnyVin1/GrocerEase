@@ -8,6 +8,7 @@ import Orders from "./Pages/Orders";
 import Shop from "./Pages/Shop";
 import LoginPage from "./Pages/LoginPage";
 import Body from "./Pages/Body";
+import NavforMobile from "./Components/NavbarForMobile";
 
 function App() {
   function redirectToHomePage() {
@@ -25,6 +26,7 @@ function App() {
     <BrowserRouter>
       <div>
         <Navigationbar />
+        <NavforMobile></NavforMobile>
         <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route path="/AboutUs" element={<AboutUs />}></Route>

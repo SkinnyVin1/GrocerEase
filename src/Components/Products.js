@@ -168,358 +168,150 @@ const Product = () => {
         <hr />
         <p>DISCOVER</p>
       </div>
-      <div>
-        <div className="ProductItems prodItems3">
-          <Item
-            image={product15}
-            stat="IN STOCK"
-            prodName="Dove"
-            price="290"
-            cart={Cart}
-          ></Item>
-          <Item
-            image={product16}
-            stat="IN STOCK"
-            prodName="Nivea"
-            price="50"
-            cart={Cart}
-          ></Item>
-          <Item
-            image={product17}
-            stat="IN STOCK"
-            prodName="Cetaphil"
-            price="50"
-            cart={Cart}
-          ></Item>
-          <Item
-            image={product18}
-            stat="IN STOCK"
-            prodName="Garnier"
-            price="50"
-            cart={Cart}
-          ></Item>
-          <Item
-            image={product19}
-            stat="IN STOCK"
-            prodName="Loreal"
-            price="50"
-            cart={Cart}
-          ></Item>
-          <Item
-            image={product20}
-            stat="IN STOCK"
-            prodName="Meat"
-            price="50"
-            cart={Cart}
-          ></Item>
-          <Item
-            image={product21}
-            stat="IN STOCK"
-            prodName="Lamb"
-            price="50"
-            cart={Cart}
-          ></Item>
-          <Item
-            image={product22}
-            stat="IN STOCK"
-            prodName="Pork"
-            price="50"
-            cart={Cart}
-          ></Item>
-          <Item
-            image={product23}
-            stat="IN STOCK"
-            prodName="Drumstick"
-            price="50"
-            cart={Cart}
-          ></Item>
-          <Item
-            image={product24}
-            stat="IN STOCK"
-            prodName="Bacon"
-            price="50"
-            cart={Cart}
-          ></Item>
-          <Item
-            image={product25}
-            stat="IN STOCK"
-            prodName="Milk"
-            price="50"
-            cart={Cart}
-          ></Item>
-          <Item
-            image={product26}
-            stat="IN STOCK"
-            prodName="Purfiltre"
-            price="50"
-            cart={Cart}
-          ></Item>
-          <Item
-            image={product27}
-            stat="IN STOCK"
-            prodName="Magnolia"
-            price="50"
-            cart={Cart}
-          ></Item>
-          <Item
-            image={product28}
-            stat="IN STOCK"
-            prodName="Nestle"
-            price="50"
-            cart={Cart}
-          ></Item>
-          <Item
-            image={product29}
-            stat="IN STOCK"
-            prodName="Eden"
-            price="50"
-            cart={Cart}
-          ></Item>
-          <Item
-            image={product30}
-            stat="IN STOCK"
-            prodName="Chili"
-            price="50"
-            cart={Cart}
-          ></Item>
-          <Item
-            image={product31}
-            stat="IN STOCK"
-            prodName="Onion"
-            price="50"
-            cart={Cart}
-          ></Item>
-          <Item
-            image={product32}
-            stat="IN STOCK"
-            prodName="Cabagge"
-            price="50"
-            cart={Cart}
-          ></Item>
-          <Item
-            image={product33}
-            stat="IN STOCK"
-            prodName="Carrots"
-            price="50"
-            cart={Cart}
-          ></Item>
-          <Item
-            image={product34}
-            stat="IN STOCK"
-            prodName="Tomato"
-            price="50"
-            cart={Cart}
-          ></Item>
+        <div>
+            <div className="ProductItems prodItems3">
+            <Item
+                image={product15}
+                stat="IN STOCK"
+                prodName="Dove"
+                price="290"
+                cart={Cart}
+            ></Item>
+            <Item
+                image={product16}
+                stat="IN STOCK"
+                prodName="Nivea"
+                price="50"
+                cart={Cart}
+            ></Item>
+            <Item
+                image={product17}
+                stat="IN STOCK"
+                prodName="Cetaphil"
+                price="50"
+                cart={Cart}
+            ></Item>
+            <Item
+                image={product18}
+                stat="IN STOCK"
+                prodName="Garnier"
+                price="50"
+                cart={Cart}
+            ></Item>
+            <Item
+                image={product19}
+                stat="IN STOCK"
+                prodName="Loreal"
+                price="50"
+                cart={Cart}
+            ></Item>
+            <Item
+                image={product20}
+                stat="IN STOCK"
+                prodName="Meat"
+                price="50"
+                cart={Cart}
+            ></Item>
+            <Item
+                image={product21}
+                stat="IN STOCK"
+                prodName="Lamb"
+                price="50"
+                cart={Cart}
+            ></Item>
+            <Item
+                image={product22}
+                stat="IN STOCK"
+                prodName="Pork"
+                price="50"
+                cart={Cart}
+            ></Item>
+            <Item
+                image={product23}
+                stat="IN STOCK"
+                prodName="Drumstick"
+                price="50"
+                cart={Cart}
+            ></Item>
+            <Item
+                image={product24}
+                stat="IN STOCK"
+                prodName="Bacon"
+                price="50"
+                cart={Cart}
+            ></Item>
+            <Item
+                image={product25}
+                stat="IN STOCK"
+                prodName="Milk"
+                price="50"
+                cart={Cart}
+            ></Item>
+            <Item
+                image={product26}
+                stat="IN STOCK"
+                prodName="Purfiltre"
+                price="50"
+                cart={Cart}
+            ></Item>
+            <Item
+                image={product27}
+                stat="IN STOCK"
+                prodName="Magnolia"
+                price="50"
+                cart={Cart}
+            ></Item>
+            <Item
+                image={product28}
+                stat="IN STOCK"
+                prodName="Nestle"
+                price="50"
+                cart={Cart}
+            ></Item>
+            <Item
+                image={product29}
+                stat="IN STOCK"
+                prodName="Eden"
+                price="50"
+                cart={Cart}
+            ></Item>
+            <Item
+                image={product30}
+                stat="IN STOCK"
+                prodName="Chili"
+                price="50"
+                cart={Cart}
+            ></Item>
+            <Item
+                image={product31}
+                stat="IN STOCK"
+                prodName="Onion"
+                price="50"
+                cart={Cart}
+            ></Item>
+            <Item
+                image={product32}
+                stat="IN STOCK"
+                prodName="Cabagge"
+                price="50"
+                cart={Cart}
+            ></Item>
+            <Item
+                image={product33}
+                stat="IN STOCK"
+                prodName="Carrots"
+                price="50"
+                cart={Cart}
+            ></Item>
+            <Item
+                image={product34}
+                stat="IN STOCK"
+                prodName="Tomato"
+                price="50"
+                cart={Cart}
+            ></Item>
+            </div>
         </div>
-        <div className="ProductsCategs">
-          <ProdCat
-            heading="Product Categories"
-            category1="Beverages"
-            category2="Chips & Snaks"
-            category3="Health & Beauty"
-            category4="Meats"
-            category5="Milks & Daries"
-            category6="Vegetables"
-          />
-        </div>
-      </div>
-      <div className="nextProd">
-        <div className="nextProdImage">
-          <img src={prodAd} alt="" />
-        </div>
-        <div className="ProductItems prodItems2">
-          <Item
-            image={product1}
-            stat="IN STOCK"
-            prodName="Cola"
-            price="50"
-            cart={Cart}
-          ></Item>
-          <Item
-            image={product1}
-            stat="IN STOCK"
-            prodName="Cola"
-            price="50"
-            cart={Cart}
-          ></Item>
-          <Item
-            image={product1}
-            stat="IN STOCK"
-            prodName="Cola"
-            price="50"
-            cart={Cart}
-          ></Item>
-          <Item
-            image={product1}
-            stat="IN STOCK"
-            prodName="Cola"
-            price="50"
-            cart={Cart}
-          ></Item>
-          <Item
-            image={product1}
-            stat="IN STOCK"
-            prodName="Cola"
-            price="50"
-            cart={Cart}
-          ></Item>
-          <Item
-            image={product1}
-            stat="IN STOCK"
-            prodName="Cola"
-            price="50"
-            cart={Cart}
-          ></Item>
-        </div>
-      </div>
-      <div className="hrHeading">
-        <hr />
-        <p>DISCOVER</p>
-      </div>
-      <div>
-        <div className="ProductItems prodItems3">
-          <Item
-            image={product1}
-            stat="IN STOCK"
-            prodName="Cola"
-            price="50"
-            cart={Cart}
-          ></Item>
-          <Item
-            image={product1}
-            stat="IN STOCK"
-            prodName="Cola"
-            price="50"
-            cart={Cart}
-          ></Item>
-          <Item
-            image={product1}
-            stat="IN STOCK"
-            prodName="Cola"
-            price="50"
-            cart={Cart}
-          ></Item>
-          <Item
-            image={product1}
-            stat="IN STOCK"
-            prodName="Cola"
-            price="50"
-            cart={Cart}
-          ></Item>
-          <Item
-            image={product1}
-            stat="IN STOCK"
-            prodName="Cola"
-            price="50"
-            cart={Cart}
-          ></Item>
-          <Item
-            image={product1}
-            stat="IN STOCK"
-            prodName="Cola"
-            price="50"
-            cart={Cart}
-          ></Item>
-          <Item
-            image={product1}
-            stat="IN STOCK"
-            prodName="Cola"
-            price="50"
-            cart={Cart}
-          ></Item>
-          <Item
-            image={product1}
-            stat="IN STOCK"
-            prodName="Cola"
-            price="50"
-            cart={Cart}
-          ></Item>
-          <Item
-            image={product1}
-            stat="IN STOCK"
-            prodName="Cola"
-            price="50"
-            cart={Cart}
-          ></Item>
-          <Item
-            image={product1}
-            stat="IN STOCK"
-            prodName="Cola"
-            price="50"
-            cart={Cart}
-          ></Item>
-          <Item
-            image={product1}
-            stat="IN STOCK"
-            prodName="Cola"
-            price="50"
-            cart={Cart}
-          ></Item>
-          <Item
-            image={product1}
-            stat="IN STOCK"
-            prodName="Cola"
-            price="50"
-            cart={Cart}
-          ></Item>
-          <Item
-            image={product1}
-            stat="IN STOCK"
-            prodName="Cola"
-            price="50"
-            cart={Cart}
-          ></Item>
-          <Item
-            image={product1}
-            stat="IN STOCK"
-            prodName="Cola"
-            price="50"
-            cart={Cart}
-          ></Item>
-          <Item
-            image={product1}
-            stat="IN STOCK"
-            prodName="Cola"
-            price="50"
-            cart={Cart}
-          ></Item>
-          <Item
-            image={product1}
-            stat="IN STOCK"
-            prodName="Cola"
-            price="50"
-            cart={Cart}
-          ></Item>
-          <Item
-            image={product1}
-            stat="IN STOCK"
-            prodName="Cola"
-            price="50"
-            cart={Cart}
-          ></Item>
-          <Item
-            image={product1}
-            stat="IN STOCK"
-            prodName="Cola"
-            price="50"
-            cart={Cart}
-          ></Item>
-          <Item
-            image={product1}
-            stat="IN STOCK"
-            prodName="Cola"
-            price="50"
-            cart={Cart}
-          ></Item>
-          <Item
-            image={product1}
-            stat="IN STOCK"
-            prodName="Cola"
-            price="50"
-            cart={Cart}
-          ></Item>
-        </div>
-      </div>
     </div>
   );
 };
