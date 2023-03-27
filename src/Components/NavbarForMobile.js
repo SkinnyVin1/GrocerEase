@@ -98,7 +98,6 @@ const NavforMobile = () => {
             <Link to="/Login">
               <div className="icon-container-forMobile">
                 <img src={Avatar} alt="" />
-                <span>Account</span>
               </div>
             </Link>
           </li>
@@ -106,7 +105,6 @@ const NavforMobile = () => {
             <Link to="/">
               <div className="icon-container-forMobile">
                 <img src={Heart} alt="" />
-                <span>Wishlist</span>
               </div>
             </Link>
           </li>
@@ -114,7 +112,6 @@ const NavforMobile = () => {
             <Link to="/">
               <div className="icon-container-forMobile">
                 <img src={Cart} alt="" />
-                <span>Cart</span>
               </div>
             </Link>
           </li>

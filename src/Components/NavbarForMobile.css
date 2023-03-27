@@ -4,9 +4,8 @@
 @media (max-width: 1279px){
     .navForMobile{
         display: grid;
-        grid-template-columns: auto auto auto;
+        grid-template-columns: 30% 40% 30%;
         align-items: center;
-        justify-content: space-between;
         z-index: 100;
         width: 100%;
         background-color: white;
@@ -21,14 +20,16 @@
         top: -2px;
     }
     .logoimg{
-        max-width: 190px;
-        min-width: 10px !important;
+        min-width: 20px;
+        margin: auto;
+        display: flex;
+        justify-content: center;
     }
     .logoimg img{
-        width: 50%;
+        width: 15%;
     }
     .ham{
-        font-size: 3.2rem;
+        font-size: 3rem;
         color: green;
     }
     .Nav-Link{
@@ -62,11 +63,10 @@
         align-items: center;
     }
     .icon-container-forMobile{
-        max-width: 150px;
-        min-width: 10px !important;
+        max-width: 200px;
     }
     .icon-container-forMobile img{
-        width: 50%;
+        width: 60%;
     }
     .icon-container-forMobile span{
         font-size: 0.7rem;
@@ -82,13 +82,22 @@
 
 @media (max-width: 600px){
     .ham{
-        font-size: 2.5rem;
+        font-size: 2rem;
         color: green;
     }
 }
 @media (max-width: 400px){
     .ham{
-        font-size: 2rem;
+        font-size: 1.5rem;
         color: green;
+    }
+}
+
+@media (max-width: 767px){
+    .logoimg img{
+        width: 20%;
+    }
+    .icon-container-forMobile img{
+        width: 65%;
     }
 }
