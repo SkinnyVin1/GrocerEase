@@ -24,10 +24,13 @@
 
 .logo{
     width: 100%;
+    /* height: 80px; */
     text-align: center;
 }
 .logo img{
-    max-width: 55%;
+    max-width: 100%;
+    width: 55%;
+    /* height: 100%; */
 
     /* padding: 0 20px 0 20px; */
 }
@@ -36,7 +39,7 @@
     /* display: f; */
 }
 .icons img{
-    max-width: 40%;
+    max-width: 35%;
 }
 .icon-container{
     display: flex;
@@ -77,6 +80,7 @@
 
 @media (max-width: 1411px){
     .navibody{
+        
         display: none;
     }
 }
