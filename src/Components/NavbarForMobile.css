@@ -7,7 +7,7 @@
         grid-template-columns: auto auto auto;
         align-items: center;
         justify-content: space-between;
-        z-index: 10000;
+        z-index: 100;
         width: 100%;
         background-color: white;
         padding: 10px 20px 10px 10px;

@@ -6,19 +6,27 @@
 }
 .footerContenttop{
     display: grid;
-    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-columns: 25% 25% 25% 25% 25%;
     place-items: center;
 }
-.logo img{
-    width: 40%;
+
+ #footlogos{
+    width: 150px;
 }
-.logo{
+.footLogo{
+    text-align: center;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
-    gap: 10px;
-    
+    /* gap: 50px; */
+    padding-bottom: 30px;
+}
+.logoText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .company li, .information li, .account li, .payment li{
     padding: 5px 0 5px 0;
@@ -75,7 +83,12 @@
         display: flex;
         flex-direction: row;
     } */
-    .logo img{
+    .footLogo img{
         width: 150px;
+    }
+    .footerContenttop{
+        display: flex;
+        flex-wrap: wrap;
+
     }
 }

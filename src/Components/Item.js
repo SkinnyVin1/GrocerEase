@@ -6,8 +6,8 @@ const Item = (props) => {
       <div className="imgContainer">
         <img src={props.image} />
       </div>
-      <p className="stat">{props.stat}</p>
       <div className="prodName">
+        <p className="stat">{props.stat}</p>
         <h1>{props.prodName}</h1>
         <div className="star">
           <i class="fa-solid fa-star"></i>

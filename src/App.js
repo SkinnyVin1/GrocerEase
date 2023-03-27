@@ -1,6 +1,6 @@
 import { useEffect } from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom"
-// import Home from "./Pages/Home";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./Pages/Home";
 import Navigationbar from "./Components/NavigationBar";
 import AboutUs from "./Pages/AboutUs";
 import Dashboard from "./Pages/Dashboard";
@@ -28,7 +28,7 @@ function App() {
         <Navigationbar />
         <NavforMobile></NavforMobile>
         <Routes>
-          <Route path="/" element={<Body />}></Route>
+          <Route path="/" element={<Home />}></Route>
           <Route path="/AboutUs" element={<AboutUs />}></Route>
           <Route path="/Dashboard" element={<Dashboard />}></Route>
           <Route path="/Orders" element={<Orders />}></Route>

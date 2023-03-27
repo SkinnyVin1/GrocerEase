@@ -19,6 +19,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
+import "swiper/css/autoplay"
 
 const CardSwiper = () => {
   return (
@@ -29,11 +30,14 @@ const CardSwiper = () => {
         modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
         spaceBetween={0}
         slidesPerView={6}
+        autoplay={{delay:5000}}
         // navigation
         // pagination={{ clickable: true }}
         // scrollbar={{ draggable: true }}
         onSwiper={(swiper) => console.log(swiper)}
         onSlideChange={() => console.log("slide change")}
+        
+
         breakpoints={{
           375: {
             slidesPerView: 2,

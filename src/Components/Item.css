@@ -9,6 +9,10 @@
     padding: 15px;
     background-color: white;
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.184);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .swiper-wrapper{
     width: 100% !important;
@@ -20,7 +24,7 @@
 }
 .imgContainer img{
     /* position: absolute; */
-    max-width: 60%;
+    max-width: 50%;
 }
 .btnContainer{
     width: 100%;
