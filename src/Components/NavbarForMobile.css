@@ -7,7 +7,7 @@
         grid-template-columns: auto auto auto;
         align-items: center;
         justify-content: space-between;
-        z-index: 10000;
+        z-index: 100;
         width: 100%;
         background-color: white;
         padding: 10px 20px 10px 10px;
@@ -73,5 +73,33 @@
         justify-content: center;
         align-items: center;
         margin-right: 5px;
+    }
+}
+@media (max-width:1024px) {
+    .navForMobile{
+        padding: 20px;
+    }
+    .logoimg{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .logoimg img{
+        width: 60%;
+    }
+    .ham{
+        font-size: 4rem;
+    }
+    .icon-container-forMobile span{
+       display: none;
+    }
+    .icon-container-forMobile{
+        width: 100px;
+        margin: 0;
+    }
+    .icon-container-forMobile img{
+        width: 100%;
+        flex-direction: column-reverse;
     }
 }
