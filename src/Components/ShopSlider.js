@@ -177,11 +177,11 @@ const Slider = () => {
         </div>
         <div className="sentence">
           <h1
-            className={`${firstSentence ? "first-sentence" : ""} ${
-              secondSentence ? "second-sentence" : ""
-            } ${thirdSentence ? "third-sentence" : ""} ${
-              fourthSentence ? "fourth-sentence" : ""
-            } ${lastSentence ? "last-sentence" : ""}`}
+            className={`${firstSentence ? "first-sentence" : ""}
+              ${secondSentence ? "second-sentence" : ""}
+              ${thirdSentence ? "third-sentence" : ""}
+              ${fourthSentence ? "fourth-sentence" : ""}
+              ${lastSentence ? "last-sentence" : ""}`}
           >
             {sentences[sentenceIndex]}
           </h1>

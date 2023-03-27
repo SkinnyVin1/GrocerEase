@@ -39,17 +39,34 @@ import Item from "./Item";
 import Cart from "../Images/146-basket-trolley-shopping-card-outline.png";
 import ProdCat from "./ProductCategory";
 import prodAd from "../Images/shop-images/Products/PR.jpg";
+import { useEffect, useState } from 'react';
 
 const Product = () => {
+    const [isMobile, setIsMobile] = useState(false);
+
+    useEffect(() => {
+        const handleResize = () => {
+            setIsMobile(window.innerWidth <= 780);
+        };
+  
+        handleResize();
+        window.addEventListener('resize', handleResize);
+  
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
+
   return (
     <div className="product">
       <h1 className="shopHead">SHOP NOW</h1>
       <div className="shopNow">
         <div className="ProductItems">
           <Item
+
             image={product1}
             stat="IN STOCK"
-            prodName="Coca-Cola"
+            prodName={isMobile ? "Coca..." : "Coca-Cola"}
             price="50"
             cart={Cart}
           ></Item>
@@ -77,14 +94,14 @@ const Product = () => {
           <Item
             image={product5}
             stat="IN STOCK"
-            prodName="Monster"
+            prodName={isMobile ? "Mons..." : "Monster"}
             price="90"
             cart={Cart}
           ></Item>
           <Item
             image={product6}
             stat="IN STOCK"
-            prodName="Heineken"
+            prodName={isMobile ? "Heine..." : "Heineken"}
             price="70"
             cart={Cart}
           ></Item>
@@ -98,7 +115,7 @@ const Product = () => {
           <Item
             image={product8}
             stat="IN STOCK"
-            prodName="Starbucks"
+            prodName={isMobile ? "Starb..." : "Starbucks"}
             price="150"
             cart={Cart}
           ></Item>
@@ -144,14 +161,14 @@ const Product = () => {
           <Item
             image={product12}
             stat="IN STOCK"
-            prodName="Cheetos"
+            prodName={isMobile ? "Cheet..." : "Cheetos"}
             price="75"
             cart={Cart}
           ></Item>
           <Item
             image={product13}
             stat="IN STOCK"
-            prodName="Lays Classic"
+            prodName={isMobile ? "Lays..." : "Lays Classic"}
             price="50"
             cart={Cart}
           ></Item>
@@ -187,7 +204,7 @@ const Product = () => {
             <Item
                 image={product17}
                 stat="IN STOCK"
-                prodName="Cetaphil"
+                prodName={isMobile ? "Cetap..." : "Cetaphil"}
                 price="50"
                 cart={Cart}
             ></Item>
@@ -229,7 +246,7 @@ const Product = () => {
             <Item
                 image={product23}
                 stat="IN STOCK"
-                prodName="Drumstick"
+                prodName={isMobile ? "Drum..." : "Drumstick"}
                 price="50"
                 cart={Cart}
             ></Item>
@@ -257,7 +274,7 @@ const Product = () => {
             <Item
                 image={product27}
                 stat="IN STOCK"
-                prodName="Magnolia"
+                prodName={isMobile ? "Magn..." : "Magnolia"}
                 price="50"
                 cart={Cart}
             ></Item>
@@ -292,7 +309,7 @@ const Product = () => {
             <Item
                 image={product32}
                 stat="IN STOCK"
-                prodName="Cabagge"
+                prodName={isMobile ? "Caba..." : "Cabagge"}
                 price="50"
                 cart={Cart}
             ></Item>

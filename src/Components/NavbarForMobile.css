@@ -1,7 +1,7 @@
 .navForMobile, #check{
     display: none;
 }
-@media (max-width: 780px){
+@media (max-width: 1279px){
     .navForMobile{
         display: grid;
         grid-template-columns: auto auto auto;
@@ -11,8 +11,8 @@
         width: 100%;
         background-color: white;
         padding: 10px 20px 10px 10px;
-        position: sticky;
-        top: -80px;
+        position: fixed;
+        top: -150px;
         transition: 0.3s ease-in-out;
         
     }
@@ -28,7 +28,7 @@
         width: 50%;
     }
     .ham{
-        font-size: 1.9rem;
+        font-size: 3.2rem;
         color: green;
     }
     .Nav-Link{
@@ -61,6 +61,10 @@
         /* column-gap: 20px; */
         align-items: center;
     }
+    .icon-container-forMobile{
+        max-width: 150px;
+        min-width: 10px !important;
+    }
     .icon-container-forMobile img{
         width: 50%;
     }
@@ -70,8 +74,21 @@
     .icon-container-forMobile{
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
-        margin-right: 5px;
+        /* margin-right: 5px; */
+    }
+}
+
+@media (max-width: 600px){
+    .ham{
+        font-size: 2.5rem;
+        color: green;
+    }
+}
+@media (max-width: 400px){
+    .ham{
+        font-size: 2rem;
+        color: green;
     }
 }

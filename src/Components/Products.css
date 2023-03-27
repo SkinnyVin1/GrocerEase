@@ -94,13 +94,45 @@ hr{
     padding: 0;
 }
 
-@media (max-width: 768px){
+@media (max-width: 1279px){
     .product .shopHead{
-        font-size: 1.5rem;
+        font-size: 2.5rem;
         margin: 20px 0 10px;
+    }
+    .forFilter h2{
+        padding: 11px 0;
+        font-size: 2rem;
+    }
+    .forFilter p{
+        font-size: 1.3rem;
+    }
+    .forFilter .Categs div{
+        margin: 8px;
     }
     .shopNow{
         grid-template-columns: 100%;
+        gap: 30px;
+    }
+    .ProductsCategs{
+        grid-row-start: 1;
+    }
+    .ProductItems{
+        gap: 20px;
+        grid-row-start: 2;
+        justify-content: center;
+    }
+    .forFilter .Categs{
+        display: grid;
+        justify-content: space-around;
+        grid-template-columns: 50% 50%;
+        margin: 0 20px;
+    }
+    .forFilter h2{
+        padding: 10px 0;
+        font-size: 2rem;
+    }
+    .forFilter p{
+        font-size: 1.7rem;
     }
     .nextProd{
         grid-template-columns: 100%;
@@ -110,15 +142,21 @@ hr{
         margin-top: 40px;
         row-gap: 30px;
     }
-    .ProductItems{
-        gap: 20px;
-        grid-row-start: 2;
-        justify-content: center;
+    .nextProdImage img{
+        height: 620px;
+        width: 90%;
+        margin-left: 40px;
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 767px){
+    .product .shopHead{
+        font-size: 1.5rem;
     }
     
-    .ProductsCategs{
-        grid-row-start: 1;
-    }
+    
+    
     .forFilter{
         display: block;
         height: 220px;
@@ -127,13 +165,8 @@ hr{
     .forFilter h2{
         padding: 10px 0;
         font-size: 1.3rem;
-        height: 50px;
     }
-    .forFilter .Categs{
-        display: grid;
-        justify-content: space-around;
-        grid-template-columns: 50% 50%;
-    }
+    
     .forFilter .Categs div{
         margin: 10px;
         height: 35px;
@@ -144,5 +177,8 @@ hr{
     .nextProdImage img{
         height: 420px;
         margin-bottom: 40px;
+        margin-left: 0;
+        width: 100%;
     }
 }
+
