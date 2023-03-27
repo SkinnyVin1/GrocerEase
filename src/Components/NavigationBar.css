@@ -19,8 +19,7 @@
     align-items: center;
     justify-content: space-between;
 
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 20px 0;
 }
 
 .logo{
@@ -74,4 +73,10 @@
 }
 .routes a:active .routes li{
     background-color: #8dd08a;
+}
+
+@media (max-width: 1411px){
+    .navibody{
+        display: none;
+    }
 }

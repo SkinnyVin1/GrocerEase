@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+.itemBody{
+    width: 240px;
+    height: 350px;
+    border-radius: 15px;
+    border: solid rgba(0, 128, 0, 0.642);
+    border-width: 1px;
+    padding: 15px;
+    background-color: white;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.184);
+}
+.swiper-wrapper{
+    width: 100% !important;
+}
+.imgContainer{
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+.imgContainer img{
+    /* position: absolute; */
+    max-width: 60%;
+}
+.btnContainer{
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin-top: -20px; */
+}
+.btnContainer button{
+    width: inherit;
+    width: 100px;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+
+    border: none;
+    background-color: #DAF5DA;
+    border-radius: 5px;
+    cursor: pointer;
+
+    transition: .15s ease-in;
+}
+
+
+.btnContainer button:hover{
+    background-color: rgba(0, 128, 0, 0.642);
+    color: white;
+}
+
+.btnContainer button img{
+    max-width: 35%;
+}
+.itemBody h1{
+    padding: 0;
+}
+.prodName h1{
+    font-size: 1.6rem;
+}
+.prodName div i{
+    font-size: 1rem;
+    color: yellow;
+}
+.btnContainer h1{
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+.stat{
+    margin-top: 10px;
+    background-color: rgba(0, 128, 0, 0.642);
+    color: #eee;
+    width: 90px;
+    text-align: center;
+}
+.star{
+    margin-bottom: 5px;
+}
+
+@media (max-width: 768px){
+    .itemBody{
+        width: 140px;
+        height: 240px;
+    }
+    .stat{
+        margin-top: 10px;
+        width: 50px;
+        font-size: 0.5rem;
+    }
+    .itemBody h1{
+        font-size: 1.7rem;
+    }
+    .prodName div i{
+        font-size: 0.7rem;
+    }
+    .star{
+        font-size: 0.7rem;
+    }
+    .btnContainer button{
+        width: 90px;
+        height: 30px;
+        font-size: 1rem;
+    }
+    .btnContainer h1{
+        font-size: 1.5rem;
+        margin-right: 5px;
+    }
+}

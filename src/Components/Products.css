@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+.product .shopHead{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 3rem;
+    margin: 20px 0;
+}
+.shopNow{
+    display: grid;
+    grid-template-columns: 77% 23%;
+}
+.ProductItems{
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+.forFilter{
+    width: 100%;
+    /* border: 2px solid black; */
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: 100%;
+    /* gap: 10px; */
+    background-color: white;
+}
+.forFilter h2{
+    padding: 15px 0;
+    text-align: center;
+    background-color: whitesmoke;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    font-size: 1.7rem;
+    /* height: 70px; */
+}
+.forFilter p{
+    font-size: 1.3rem;
+}
+.forFilter .Categs div{
+    display: flex;
+    justify-content: space-between;
+    align-content: space-around;
+    margin: 30px;
+    align-items: center;
+    height: 73px;
+}
+
+.nextProd{
+    display: grid;
+    grid-template-columns: 37.5% 63.5%;
+    margin-top: 40px;
+}
+.nextProdImage img{
+    width: 100%;
+    height: 720px;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.334);
+}
+.prodItems2{
+    margin-left: 15px;
+    justify-content: space-around;
+}
+.prodItems3{
+    justify-content: space-between;
+    row-gap: 30px;
+}
+.hrHeading{
+    position: relative;
+    margin: 40px 0;
+    width: 100%;
+    height: 10px;
+    /* background-color: green; */
+    /* display: inline-block; */
+}
+hr{
+    background: none;
+    border: none;
+    height: 3px;
+    background-color: green;
+}
+.hrHeading p{
+    position: absolute;
+    top: -12.5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #eee;
+    padding: 0 5px;
+    font-size: 1.2rem;
+}
+
+@media (max-width: 768px){
+    .product .shopHead{
+        font-size: 1.5rem;
+        margin: 20px 0 10px;
+    }
+    .shopNow{
+        grid-template-columns: 100%;
+    }
+    .nextProd{
+        grid-template-columns: 100%;
+    }
+    .prodItems3{
+        justify-content: center;
+        margin-top: 40px;
+        row-gap: 30px;
+    }
+    .ProductItems{
+        gap: 20px;
+        grid-row-start: 2;
+        justify-content: center;
+    }
+    
+    .ProductsCategs{
+        grid-row-start: 1;
+    }
+    .forFilter{
+        display: block;
+        height: 220px;
+        margin-bottom: 20px;
+    }
+    .forFilter h2{
+        padding: 10px 0;
+        font-size: 1.3rem;
+        height: 50px;
+    }
+    .forFilter .Categs{
+        display: grid;
+        justify-content: space-around;
+        grid-template-columns: 50% 50%;
+    }
+    .forFilter .Categs div{
+        margin: 10px;
+        height: 35px;
+    }
+    .forFilter p{
+        font-size: 1rem;
+    }
+    .nextProdImage img{
+        height: 420px;
+        margin-bottom: 40px;
+    }
+}
