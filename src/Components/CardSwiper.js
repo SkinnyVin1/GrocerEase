@@ -62,7 +62,7 @@ const CardSwiper = () => {
             image={popular}
             stat="In Stock"
             prodName="Nivea"
-            price="179.18"
+            price="100"
             cart={Cart}
           />
         </SwiperSlide>
@@ -71,7 +71,7 @@ const CardSwiper = () => {
             image={popular1}
             stat="In Stock"
             prodName="Purfiltre"
-            price="179.18"
+            price="250"
             cart={Cart}
           />
         </SwiperSlide>
@@ -80,7 +80,7 @@ const CardSwiper = () => {
             image={popular2}
             stat="In Stock"
             prodName="Oishi"
-            price="179.18"
+            price="40"
             cart={Cart}
           />
         </SwiperSlide>
@@ -89,7 +89,7 @@ const CardSwiper = () => {
             image={popular6}
             stat="In Stock"
             prodName="Magnolia"
-            price="179.18"
+            price="290"
             cart={Cart}
           />
         </SwiperSlide>
@@ -98,7 +98,7 @@ const CardSwiper = () => {
             image={popular3}
             stat="In Stock"
             prodName="Monster"
-            price="179.18"
+            price="90"
             cart={Cart}
           />
         </SwiperSlide>
@@ -107,7 +107,7 @@ const CardSwiper = () => {
             image={popular4}
             stat="In Stock"
             prodName="Garnier"
-            price="179.18"
+            price="299"
             cart={Cart}
           />
         </SwiperSlide>
@@ -116,7 +116,7 @@ const CardSwiper = () => {
             image={popular5}
             stat="In Stock"
             prodName="Cheetos"
-            price="179.18"
+            price="75"
             cart={Cart}
           />
         </SwiperSlide>

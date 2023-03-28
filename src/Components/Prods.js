@@ -21,70 +21,70 @@ const Prods = () => {
         image={c1}
         stat="In Stock"
         prodName="Ruffles"
-        price="179.18"
+        price="60"
         cart={Cart}
       />
       <Item
         image={c2}
         stat="In Stock"
         prodName="Nivea"
-        price="179.18"
+        price="100"
         cart={Cart}
       />
       <Item
         image={c3}
         stat="In Stock"
         prodName="Nescafe"
-        price="179.18"
+        price="150"
         cart={Cart}
       />
       <Item
         image={c4}
         stat="In Stock"
         prodName="Cetaphil"
-        price="179.18"
+        price="350"
         cart={Cart}
       />
       <Item
         image={c5}
         stat="In Stock"
         prodName="Oishi"
-        price="179.18"
+        price="40"
         cart={Cart}
       />
       <Item
         image={c6}
         stat="In Stock"
         prodName="Nutella"
-        price="179.18"
+        price="199"
         cart={Cart}
       />
       <Item
         image={c7}
         stat="In Stock"
         prodName="Bacon"
-        price="179.18"
+        price="150"
         cart={Cart}
       />
       <Item
         image={c8}
         stat="In Stock"
-        prodName="Bottled Milk"
-        price="179.18"
+        prodName="Milk"
+        price="99"
         cart={Cart}
       />
       <Item
         image={c9}
         stat="In Stock"
         prodName="Chili"
-        price="179.18"
+        price="50"
         cart={Cart}
       />
       <Item
         image={c10}
         stat="In Stock"
         prodName="Meat"
-        price="179.18"
+        price="199"
         cart={Cart}
       />
     </div>
