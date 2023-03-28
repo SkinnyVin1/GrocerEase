@@ -3,6 +3,9 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 
 const Contact = () => {
     return (
+
+        
+      
         <div class="container">
         <div class="content">
           <div class="left-side">
@@ -25,8 +28,7 @@ const Contact = () => {
             </div>
           </div>
           <div class="right-side">
-            <div class="topic-text">Send us a message</div>
-            <p>If you have any work from me or any types of quries related to my tutorial, you can send me message from here. It's my pleasure to help you.</p>
+            <div class="topic-text">CONTACT US</div>
           <form action="#">
             <div class="input-box">
               <input type="text" placeholder="Enter your name"/>
@@ -45,6 +47,7 @@ const Contact = () => {
         </div>
         </div>
       </div>
+      
     );
   };
   
