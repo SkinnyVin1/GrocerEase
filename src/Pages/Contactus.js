@@ -29,6 +29,8 @@ const Contact = () => {
           </div>
           <div class="right-side">
             <div class="topic-text">CONTACT US</div>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi porro rerum cupiditate expedita distinctio nisi nulla ipsum libero molestiae minima Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid,ipsum libero molestiae</p>
+
           <form action="#">
             <div class="input-box">
               <input type="text" placeholder="Enter your name"/>
