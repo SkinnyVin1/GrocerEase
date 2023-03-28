@@ -4,6 +4,8 @@ import ShoImg from "../Images/shopping.png";
 import { Link } from "react-router-dom";
 import { useState, useRef, useEffect, useContext } from "react";
 import AuthContext from "../context/AuthProvider";
+import axios from "../api/axios";
+const LOGIN_URL = "/auth";
 
 const LoginPage = () => {
   const [showPassword, setShowPassword] = useState(false);
@@ -33,10 +35,37 @@ const LoginPage = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(user, pwd);
-    setUser("");
-    setPwd("");
-    setSuccess(true);
+    // console.log(user, pwd);
+
+    try {
+      const response = await axios.post(
+        LOGIN_URL,
+        JSON.stringify({ user, pwd }),
+        {
+          headers: { "Content-Type": "application/json" },
+          withCredentials: true,
+        }
+      );
+      console.log(JSON.stringify(response?.data));
+      // console.log(JSON.stringify(response));
+      const accessToken = response?.data?.accessToken;
+      const roles = response?.data?.roles;
+      setAuth({ user, pwd, roles, accessToken });
+      setUser("");
+      setPwd("");
+      setSuccess(true);
+    } catch (err) {
+      if (!err?.response) {
+        setErrMsg("No server Response");
+      } else if (err.response?.status === 400) {
+        setErrMsg("Missing Username or Password");
+      } else if (err.response?.status === 401) {
+        setErrMsg("Unauthorized");
+      } else {
+        setErrMsg("Login Failed");
+      }
+      errRef.current.focus();
+    }
   };
 
   return (
