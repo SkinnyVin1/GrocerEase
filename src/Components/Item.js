@@ -3,18 +3,18 @@ import { useState } from "react";
 
 const Item = (props) => {
   const [isOpen, setIsOpen] = useState(false);
-  const [open, setOpen] = useState('none');
+  const [open, setOpen] = useState("none");
 
-  const modalOpen = () =>{
-    setOpen(open === 'none' ? 'block' : 'none');
-  }
+  const modalOpen = () => {
+    setOpen(open === "none" ? "block" : "none");
+  };
 
   function toggleModal() {
     setIsOpen(!isOpen);
     if (!isOpen) {
-      document.body.classList.add('modal-open');
+      document.body.classList.add("modal-open");
     } else {
-      document.body.classList.remove('modal-open');
+      document.body.classList.remove("modal-open");
     }
   }
 
@@ -38,13 +38,26 @@ const Item = (props) => {
       <div className="btnContainer">
         <h1>₱{props.price}</h1>
         <div>
-          <button onClick={() => {toggleModal(); modalOpen()}}>
+          <button
+            onClick={() => {
+              toggleModal();
+              modalOpen();
+            }}
+          >
             <img src={props.cart} /> Buy
           </button>
-          <div className="modal" style={{display: open}}>
+
+          <div className="modal" style={{ display: open }}>
             <div className="modal-content">
-              <h1>Basta modal to</h1>
-              <button onClick={() => {toggleModal(); modalOpen()}}>Close</button>
+              <h1>{props.prodName}</h1>
+              <button
+                onClick={() => {
+                  toggleModal();
+                  modalOpen();
+                }}
+              >
+                Close
+              </button>
             </div>
           </div>
         </div>
