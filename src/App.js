@@ -11,16 +11,16 @@ import Body from "./Pages/Body";
 import NavforMobile from "./Components/NavbarForMobile";
 
 function App() {
-  function redirectToHomePage() {
-    window.location.href = "/";
-  }
+  // function redirectToHomePage() {
+  //   window.location.href = "/";
+  // }
 
-  useEffect(() => {
-    window.addEventListener("load", redirectToHomePage);
-    return () => {
-      window.removeEventListener("load", redirectToHomePage);
-    };
-  }, []);
+  // useEffect(() => {
+  //   window.addEventListener("load", redirectToHomePage);
+  //   return () => {
+  //     window.removeEventListener("load", redirectToHomePage);
+  //   };
+  // }, []);
 
   return (
     <BrowserRouter>
