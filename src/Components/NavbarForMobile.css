@@ -3,13 +3,14 @@
 }
 @media (max-width: 1279px){
     .navForMobile{
+        height: 80px;
         display: grid;
         grid-template-columns: 30% 40% 30%;
         align-items: center;
         z-index: 100;
         width: 100%;
         background-color: white;
-        padding: 10px 20px 10px 10px;
+        padding: 10px 10px 10px 20px;
         position: sticky;
         top: -150px;
         transition: 0.3s ease-in-out;
@@ -26,7 +27,8 @@
         justify-content: center;
     }
     .logoimg img{
-        width: 15%;
+        max-width: 100%;
+        width: 45px !important;
     }
     .ham{
         font-size: 3rem;
