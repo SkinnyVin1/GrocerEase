@@ -3,11 +3,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 92%;
+    margin-left: 8%;
+    /* padding: 40px; */
 }
 .background-container{
     width: 100%;
     min-height: 100vh;
     display: flex; 
+   
 }
 .bg-1{
     flex: 1;
@@ -57,7 +61,7 @@
     text-decoration: none;
     padding: 12px;
     margin: 50px 0px;
-    background-color: rebeccapurple;
+    background-color: #92dd9a;
     border: 2px solid transparent;
     color: white;
     border-radius: 5px;
@@ -66,7 +70,7 @@
 .text-container a:hover{
     background-color: transparent;
     color: black;
-    border: 2px solid rebeccapurple;
+    border: 2px solid #92dd9a
 }
 @media screen and (max-width: 1600px){
     .about-container{
