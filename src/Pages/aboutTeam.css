@@ -9,8 +9,9 @@
     /* padding: 40px; */
 }
 .background-container{
-    width: 100%;
-    min-height: 100vh;
+    margin-top: 3%;
+    width: 95%;
+    min-height: 95vh;
     display: flex; 
    
 }
@@ -26,6 +27,7 @@
 .about-container{
     width: 85%;
     min-height: 80vh;
+    margin-top: 3%;
     position: absolute;
     background-color: white;
     display: flex;
