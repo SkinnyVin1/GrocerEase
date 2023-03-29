@@ -1,7 +1,3 @@
-import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from "swiper";
-import { Swiper, SwiperSlide } from "swiper/react";
-// import SwiperCore, { Breakpoints } from "swiper";
-// SwiperCore.use([Breakpoints]);
 
 import Item from "./Item";
 import Cart from "../Images/146-basket-trolley-shopping-card-outline.png";
@@ -14,50 +10,11 @@ import popular4 from "../Images/shop-images/Products/s4.png"
 import popular5 from "../Images/shop-images/Products/c4.png"
 import popular6 from "../Images/shop-images/Products/d3.png"
 
-
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import "swiper/css/scrollbar";
-import "swiper/css/autoplay"
-
 const CardSwiper = () => {
   return (
     <div className="cardSwiperBody">
       <h1>Popular Products</h1>
-      <Swiper
-        className="swiper"
-        modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
-        spaceBetween={0}
-        slidesPerView={6}
-        autoplay={{delay:5000}}
-        // navigation
-        // pagination={{ clickable: true }}
-        // scrollbar={{ draggable: true }}
-        onSwiper={(swiper) => console.log(swiper)}
-        onSlideChange={() => console.log("slide change")}
-        
-
-        breakpoints={{
-          375: {
-            slidesPerView: 2,
-            spaceBetween: 20,
-          },
-          540: {
-            slidesPerView: 3,
-            spaceBetween: 60,
-          },
-          885: {
-            slidesPerView: 3,
-            // spaceBetween: 40,
-          },
-          1023: {
-            slidesPerView: 6,
-            // spaceBetween: 50,
-          },
-        }}
-      >
-        <SwiperSlide className="item">
+      <div className="popular">
           <Item
             image={popular}
             stat="In Stock"
@@ -65,8 +22,6 @@ const CardSwiper = () => {
             price="100"
             cart={Cart}
           />
-        </SwiperSlide>
-        <SwiperSlide className="item">
           <Item
             image={popular1}
             stat="In Stock"
@@ -74,8 +29,6 @@ const CardSwiper = () => {
             price="250"
             cart={Cart}
           />
-        </SwiperSlide>
-        <SwiperSlide className="item">
           <Item
             image={popular2}
             stat="In Stock"
@@ -83,8 +36,6 @@ const CardSwiper = () => {
             price="40"
             cart={Cart}
           />
-        </SwiperSlide>
-        <SwiperSlide className="item">
           <Item
             image={popular6}
             stat="In Stock"
@@ -92,8 +43,6 @@ const CardSwiper = () => {
             price="290"
             cart={Cart}
           />
-        </SwiperSlide>
-        <SwiperSlide className="item">
           <Item
             image={popular3}
             stat="In Stock"
@@ -101,8 +50,6 @@ const CardSwiper = () => {
             price="90"
             cart={Cart}
           />
-        </SwiperSlide>
-        <SwiperSlide className="item">
           <Item
             image={popular4}
             stat="In Stock"
@@ -110,17 +57,7 @@ const CardSwiper = () => {
             price="299"
             cart={Cart}
           />
-        </SwiperSlide>
-        <SwiperSlide className="item">
-          <Item
-            image={popular5}
-            stat="In Stock"
-            prodName="Cheetos"
-            price="75"
-            cart={Cart}
-          />
-        </SwiperSlide>
-      </Swiper>
+      </div>
     </div>
   );
 };
