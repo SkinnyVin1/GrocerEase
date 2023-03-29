@@ -23,6 +23,7 @@
     cursor: pointer;
     transition: 0.3s;
     background-color: #ffffff;
+    
   }
   .card .img-container {
     width: 8em;
@@ -56,12 +57,16 @@
     text-decoration: none;
     color: inherit;
     font-size: 1.4em;
+
+   
   }
   .card:hover {
-    background: linear-gradient(#92dd9a, #a1daa7);
+    transition: all .2s ease-in-out;
+    background: linear-gradient(#c0f6c5,  #49c956);
     color: #ffffff;
   }
   .card:hover .img-container {
+    transition: all .2s ease-in-out;
     transform: scale(1.15);
   }
   @media screen and (min-width: 768px) {
