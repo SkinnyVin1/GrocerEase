@@ -42,7 +42,7 @@ const Navigationbar = () => {
         </ul>
       </div>
 
-      <div className="icons">
+      <div className="icons2">
         <ul>
           <li>
             <Link to="/">
