@@ -200,10 +200,10 @@ input[type=number]::-webkit-outer-spin-button {
     background-color: white;
 }
 #plus{
-    border-right: 1px solid black;
+    border-left: 1px solid black;
 }
 #minus{
-    border-left: 1px solid black;
+    border-right: 1px solid black;
 }
 .modal-buy{
     display: grid;

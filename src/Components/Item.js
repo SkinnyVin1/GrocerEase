@@ -84,9 +84,9 @@ const Item = (props) => {
                   <p className="theQuant">(125 quantity)</p>
                 </div>
                 <div className="quantity">
-                  <button id="plus" onClick={prodQuantity}>+</button>
-                  <input type="number" value={quantity} onChange={(e) => setQuantity(parseInt(e.target.value))}/>
                   <button id="minus" onClick={prodQuantity}>-</button>
+                  <input type="number" value={quantity} onChange={(e) => setQuantity(parseInt(e.target.value))}/>
+                  <button id="plus" onClick={prodQuantity}>+</button>
                 </div>
                 <div className="modal-buy">
                   <button className="modal-AddtoCart"><img src={props.cart} /><h2>Add to Cart</h2></button>
