@@ -34,7 +34,7 @@
     align-items: center;
     /* margin-top: -20px; */
 }
-.btnContainer button{
+#buy{
     width: inherit;
     width: 100px;
     height: 40px;
@@ -45,7 +45,7 @@
     font-size: 1.3rem;
 
     border: none;
-    background-color: #DAF5DA;
+    background-color: #dddaf5;
     border-radius: 5px;
     cursor: pointer;
 
@@ -53,7 +53,7 @@
 }
 
 
-.btnContainer button:hover{
+#buy:hover{
     background-color: rgba(0, 128, 0, 0.642);
     color: white;
 }
@@ -67,7 +67,7 @@
 .prodName h1{
     font-size: 1.6rem;
 }
-.prodName div i{
+.star i{
     font-size: 1rem;
     color: yellow;
 }
@@ -87,21 +87,170 @@
 }
 
 .modal{
-    width: 100%;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.341);
+    width: 100% !important;
+    height: 100vh !important;
+    background-color: rgba(0, 0, 0, 0.584);
     z-index: 10000;
-    overflow: hidden;
-    position: fixed;
+    /* overflow: hidden; */
+    position: fixed !important;
     top: 0;
     left: 0;
+    justify-content: center;
+    align-items: center;
+    animation: fade 1s ease;
 }
-
+@keyframes fade{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.modal-content{
+    align-items: center;
+    background-color: #eee;
+    width: 40%;
+    margin: 10px 0;
+    animation: zoom 0.5s ease;
+    position: absolute;
+    display: flex;
+}
+@keyframes zoom{
+    from{
+        transform: scale(0);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+.modal-image{
+    width: 100%;
+    background-color: white;
+    padding: 20px;
+}
+.modal-image img{
+    width: 100%;
+}
+.product-details{
+    width: 100%;
+    text-align: center;
+}
+.product-details h1{
+    font-size: 4rem;
+}
+.rating{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 20px;
+}
 .modal-open{
     overflow: hidden;
 }
-.modal-content h1{
+.modal-btn{
+    display: inline-block;
+    position: absolute;
+    top: 1%;
+    right: 1%;
+}
+.modal-btn p{
+    font-size: 2rem;
+    cursor: pointer;
+    color: #eee;
+}
+.modal-btn p:hover{
+    transition: 0.2s ease;
+    transform: scale(1.2);
+}
+.quantity{
+    display: flex;
+    align-items: center;
+    /* gap: 20px; */
+    justify-content: center;
+    background-color: white;
+    width: 150px;
+    margin: auto;
+    border: 1px solid black;
+    margin-bottom: 20px;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.quantity input{
+    border: none;
+    outline: none;
+    text-align: center;
+    font-size: 1.5rem;
+    width: 100%;
+    background-color: #eee;
+}
+.quantity button{
+    /* background: none; */
+    outline: none;
+    border: none;
+    font-size: 1.5rem;
+    width: 100px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.quantity button:hover{
+    background-color: white;
+}
+#plus{
+    border-right: 1px solid black;
+}
+#minus{
+    border-left: 1px solid black;
+}
+.modal-buy{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    width: 90%;
+    margin: auto;
+    gap: 5px;
+}
+.modal-buy img{
+    width: 100%;
+}
+.modal-AddtoCart{
+    display: flex;
+    align-items: center;
+}
+.modal-star{
+    margin-top: -5px;
+    font-size: 1.1rem;
+}
+.modal-star i{
+    font-size: 1.2rem;
+}
+.modal-head{
+    margin-bottom: 30px;
+}
+.modal-price{
+    font-size: 2.5rem;
+}
+.modal-buyNow{
+    background-color: green;
+    border: none;
     color: white;
+    cursor: pointer;
+}
+.modal-buyNow:hover{
+    transform: scale(1.03);
+}
+.modalQaunt{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 4px;
+}
+.theQuant{
+    font-size: 1.1rem !important;
 }
 
 
@@ -124,8 +273,8 @@
     .star{
         font-size: 0.7rem;
     }
-    .btnContainer button{
-        width: 90px;
+    #buy{
+        width: 65px;
         height: 30px;
         font-size: 1rem;
     }
