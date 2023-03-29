@@ -14,7 +14,7 @@
     -webkit-box-shadow: -3px 1px 19px 3px rgba(0,0,0,0.15);
     -moz-box-shadow: -3px 1px 19px 3px rgba(0,0,0,0.48);
 
-    display: flex;
+    display: flex;   
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
@@ -30,15 +30,15 @@
 .logo img{
     max-width: 100%;
     width: 55%;
-    /* height: 100%; */
+    /* height: 100%; */ 
 
     /* padding: 0 20px 0 20px; */
 }
-.icons{
+.icons2{
     width: 100%;
     /* display: f; */
 }
-.icons img{
+.icons2 img{
     max-width: 35%;
 }
 .icon-container{

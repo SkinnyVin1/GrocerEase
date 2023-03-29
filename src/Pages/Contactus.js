@@ -6,7 +6,7 @@ const Contact = () => {
 
         
       
-        <div class="container">
+        <div class="contactContainer">
         <div class="content">
           <div class="left-side">
             <div class="address details">
@@ -28,7 +28,7 @@ const Contact = () => {
             </div>
           </div>
           <div class="right-side">
-            <div class="topic-text">CONTACT US</div>
+            <div class="topic-text"><h1 id='contact'>CONTACT US</h1></div>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi porro rerum cupiditate expedita distinctio nisi nulla ipsum libero molestiae minima Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid,ipsum libero molestiae</p>
 
           <form action="#">
