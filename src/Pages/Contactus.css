@@ -43,7 +43,7 @@
   }
   .content .left-side .details i{
     font-size: 30px;
-    color: #92dd9a;
+    color:  #49c956;
     margin-bottom: 10px;
   }
   .content .left-side .details .topic{
@@ -62,7 +62,7 @@
   .content .right-side .topic-text{
     font-size: 23px;
     font-weight: 600;
-    color: #82e08c;
+    color:  #49c956;
   }
   .right-side .input-box{
     height: 50px;
@@ -98,7 +98,7 @@
     border: none;
     padding: 8px 16px;
     border-radius: 6px;
-    background: #92dd9a;
+    background:  #49c956;
     cursor: pointer;
     transition: all 0.3s ease;
   }

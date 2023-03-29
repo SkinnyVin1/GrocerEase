@@ -119,6 +119,20 @@ const Product = () => {
             price="150"
             cart={Cart}
           ></Item>
+         <Item
+            image={product4}
+            stat="IN STOCK"
+            prodName="Fanta"
+            price="50"
+            cart={Cart}
+          ></Item>
+          <Item
+            image={product3}
+            stat="IN STOCK"
+            prodName="Pepsi"
+            price="50"
+            cart={Cart}
+          ></Item>
         </div>
         <div className="ProductsCategs">
           <ProdCat
@@ -141,7 +155,7 @@ const Product = () => {
             image={product9}
             stat="IN STOCK"
             prodName="Lays"
-            price="50"
+            price="55"
             cart={Cart}
           ></Item>
           <Item
@@ -155,7 +169,7 @@ const Product = () => {
             image={product11}
             stat="IN STOCK"
             prodName="Ruffles"
-            price="50"
+            price="60"
             cart={Cart}
           ></Item>
           <Item
@@ -163,6 +177,20 @@ const Product = () => {
             stat="IN STOCK"
             prodName={isMobile ? "Cheet..." : "Cheetos"}
             price="75"
+            cart={Cart}
+          ></Item>
+          <Item
+            image={product13}
+            stat="IN STOCK"
+            prodName={isMobile ? "Lays..." : "Lays Classic"}
+            price="50"
+            cart={Cart}
+          ></Item>
+          <Item
+            image={product14}
+            stat="IN STOCK"
+            prodName="Doritos"
+            price="70"
             cart={Cart}
           ></Item>
           <Item
@@ -198,91 +226,91 @@ const Product = () => {
                 image={product16}
                 stat="IN STOCK"
                 prodName="Nivea"
-                price="50"
+                price="100"
                 cart={Cart}
             ></Item>
             <Item
                 image={product17}
                 stat="IN STOCK"
                 prodName={isMobile ? "Cetap..." : "Cetaphil"}
-                price="50"
+                price="350"
                 cart={Cart}
             ></Item>
             <Item
                 image={product18}
                 stat="IN STOCK"
                 prodName="Garnier"
-                price="50"
+                price="299"
                 cart={Cart}
             ></Item>
             <Item
                 image={product19}
                 stat="IN STOCK"
                 prodName="Loreal"
-                price="50"
+                price="199"
                 cart={Cart}
             ></Item>
             <Item
                 image={product20}
                 stat="IN STOCK"
                 prodName="Meat"
-                price="50"
+                price="199"
                 cart={Cart}
             ></Item>
             <Item
                 image={product21}
                 stat="IN STOCK"
                 prodName="Lamb"
-                price="50"
+                price="199"
                 cart={Cart}
             ></Item>
             <Item
                 image={product22}
                 stat="IN STOCK"
                 prodName="Pork"
-                price="50"
+                price="199"
                 cart={Cart}
             ></Item>
             <Item
                 image={product23}
                 stat="IN STOCK"
                 prodName={isMobile ? "Drum..." : "Drumstick"}
-                price="50"
+                price="150"
                 cart={Cart}
             ></Item>
             <Item
                 image={product24}
                 stat="IN STOCK"
                 prodName="Bacon"
-                price="50"
+                price="150"
                 cart={Cart}
             ></Item>
             <Item
                 image={product25}
                 stat="IN STOCK"
                 prodName="Milk"
-                price="50"
+                price="99"
                 cart={Cart}
             ></Item>
             <Item
                 image={product26}
                 stat="IN STOCK"
                 prodName="Purfiltre"
-                price="50"
+                price="250"
                 cart={Cart}
             ></Item>
             <Item
                 image={product27}
                 stat="IN STOCK"
                 prodName={isMobile ? "Magn..." : "Magnolia"}
-                price="50"
+                price="290"
                 cart={Cart}
             ></Item>
             <Item
                 image={product28}
                 stat="IN STOCK"
                 prodName="Nestle"
-                price="50"
+                price="150"
                 cart={Cart}
             ></Item>
             <Item
@@ -300,6 +328,34 @@ const Product = () => {
                 cart={Cart}
             ></Item>
             <Item
+                image={product31}
+                stat="IN STOCK"
+                prodName="Onion"
+                price="50"
+                cart={Cart}
+            ></Item>
+            <Item
+                image={product32}
+                stat="IN STOCK"
+                prodName={isMobile ? "Caba..." : "Cabagge"}
+                price="50"
+                cart={Cart}
+            ></Item>
+            <Item
+                image={product33}
+                stat="IN STOCK"
+                prodName="Carrots"
+                price="50"
+                cart={Cart}
+            ></Item>
+            <Item
+                image={product34}
+                stat="IN STOCK"
+                prodName="Tomato"
+                price="50"
+                cart={Cart}
+            ></Item>
+             <Item
                 image={product31}
                 stat="IN STOCK"
                 prodName="Onion"
