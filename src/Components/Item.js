@@ -27,9 +27,9 @@ const Item = (props) => {
   function toggleModal() {
     setIsOpen(!isOpen);
     if (!isOpen) {
-      document.body.classList.add('modal-open');
+      document.body.classList.add("modal-open");
     } else {
-      document.body.classList.remove('modal-open');
+      document.body.classList.remove("modal-open");
     }
   }
 
@@ -53,10 +53,16 @@ const Item = (props) => {
       <div className="btnContainer">
         <h1>₱{props.price}</h1>
         <div>
-          <button id="buy" onClick={() => {toggleModal(); modalOpen()}}>
+          <button
+            onClick={() => {
+              toggleModal();
+              modalOpen();
+            }}
+          >
             <img src={props.cart} /> Buy
           </button>
-          <div className="modal" style={{display: open}}>
+
+          <div className="modal" style={{ display: open }}>
             <div className="modal-content">
               <div className="modal-image">
                 <img src={props.image} />

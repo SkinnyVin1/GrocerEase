@@ -21,6 +21,7 @@ const Navigationbar = () => {
       <div className="logo">
         <img src={Logo} alt="" />
       </div>
+      
       <div className="routes">
         <ul>
           <li style={linkStyle('link1')}>
@@ -40,6 +41,7 @@ const Navigationbar = () => {
           </li>
         </ul>
       </div>
+
       <div className="icons">
         <ul>
           <li>
