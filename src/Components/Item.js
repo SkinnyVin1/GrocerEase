@@ -53,7 +53,7 @@ const Item = (props) => {
       <div className="btnContainer">
         <h1>₱{props.price}</h1>
         <div>
-          <button
+          <button id="buy"
             onClick={() => {
               toggleModal();
               modalOpen();
