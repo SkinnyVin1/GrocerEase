@@ -7,37 +7,47 @@ import Cart from "../Images/146-basket-trolley-shopping-card-outline.png";
 import Heart from "../Images/heart.png";
 
 const Navigationbar = () => {
-  const [activeLink, setActiveLink] = useState('link1');
+  const [activeLink, setActiveLink] = useState("link1");
   const changeColor = (link) => {
     setActiveLink(link);
-  }
+  };
   const linkStyle = (linkId) => {
     return {
-      backgroundColor: activeLink === linkId ? '#8dd08a' : 'white',
+      backgroundColor: activeLink === linkId ? "#8dd08a" : "white",
     };
-  }
+  };
   return (
     <div className="navibody">
       <div className="logo">
         <img src={Logo} alt="" />
       </div>
-      
+
       <div className="routes">
         <ul>
-          <li style={linkStyle('link1')}>
-            <Link to="/" onClick={() => changeColor('link1')}>Home</Link>
+          <li style={linkStyle("link1")}>
+            <Link to="/group1_capstone" onClick={() => changeColor("link1")}>
+              Home
+            </Link>
           </li>
-          <li style={linkStyle('link2')}>
-            <Link to="/AboutUs" onClick={() => changeColor('link2')}>About Us</Link>
+          <li style={linkStyle("link2")}>
+            <Link to="/AboutUs" onClick={() => changeColor("link2")}>
+              About Us
+            </Link>
           </li>
-          <li style={linkStyle('link3')}>
-            <Link to="/Shop" onClick={() => changeColor('link3')}>Shop</Link>
+          <li style={linkStyle("link3")}>
+            <Link to="/Shop" onClick={() => changeColor("link3")}>
+              Shop
+            </Link>
           </li>
-          <li style={linkStyle('link4')}>
-            <Link to="/Orders" onClick={() => changeColor('link4')}>Orders</Link>
+          <li style={linkStyle("link4")}>
+            <Link to="/Orders" onClick={() => changeColor("link4")}>
+              Orders
+            </Link>
           </li>
-          <li style={linkStyle('link5')}>
-            <Link to="/Dashboard" onClick={() => changeColor('link5')}>Dashboard</Link>
+          <li style={linkStyle("link5")}>
+            <Link to="/Dashboard" onClick={() => changeColor("link5")}>
+              Dashboard
+            </Link>
           </li>
         </ul>
       </div>

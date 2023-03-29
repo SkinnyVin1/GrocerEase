@@ -5,27 +5,18 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <div className="footerBody">
-      <div className="footLogo">
-        <img src={Logo} id="footlogos" />
-        <div className="logoText">
-          <p>
-            <b>Address:</b>
-            5171 W Campbell Ave undefined Kent, <br />
-            Utah 53127 United States
-          </p>
-
-          <p>
-            <b>Email:</b>
-            grocerease@hop.com
-          </p>
-
-          <p>
-            <b>Call Us:</b>
-            (+91) - 540-025-124553
-          </p>
-        </div>
-      </div>
       <div className="footerContenttop">
+        <div className="footLogo">
+          <img src={Logo} id="footlogos" />
+          <div className="logoText">
+            <b>Address:</b>
+            <p>BGC Taguig Metro-Manila</p>
+            <b>Email:</b>
+            <p>grocerease@hop.com</p>
+            <b>Call Us:</b>
+            <p>(+91) - 540-025-124553</p>
+          </div>
+        </div>
         <div className="company">
           <h2>Company</h2>
           <ul>

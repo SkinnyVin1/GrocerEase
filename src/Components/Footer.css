@@ -5,9 +5,9 @@
     padding: 20px 40px 0 40px;
 }
 .footerContenttop{
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25% 25%;
-    place-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
  #footlogos{
@@ -27,6 +27,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
 }
 .company li, .information li, .account li, .payment li{
     padding: 5px 0 5px 0;
