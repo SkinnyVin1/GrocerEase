@@ -3,6 +3,7 @@ import Team1 from "../Images/team1.jpg";
 import Team2 from "../Images/team2.png";
 import Team3 from "../Images/vin.jpg";
 import "@fortawesome/fontawesome-free/css/all.min.css";
+import { Link } from "react-router-dom";
 
 const Team = () => {
   return (
@@ -17,11 +18,12 @@ const Team = () => {
               <img src={Team2} />
             </div>
             <h3>Emmanuel Galaroza</h3>
-            <p>Developer</p>
+            <p>Web Developer</p>
+            <p className='portfolio'><Link to='https://skinnyvin1.github.io/First-React-Deployment-Serrano/' target='_blank'>View Portfolio</Link></p>
             <div class="icons">
-              <a href="#">
+            <Link to='https://www.facebook.com/emmanuel.galaroza.7' target='_blank'>
                 <i class="fa-brands fa-square-facebook"></i>
-              </a>
+              </Link>
               <a href="#">
                 <i class="fa-brands fa-discord"></i>
               </a>
@@ -41,11 +43,12 @@ const Team = () => {
               <img src={Team1} />
             </div>
             <h3>Atashia Almo</h3>
-            <p>Developer</p>
+            <p>Web Developer</p>
+            <p className='portfolio'><Link to='https://skinnyvin1.github.io/First-React-Deployment-Serrano/' target='_blank'>View Portfolio</Link></p>
             <div class="icons">
-              <a href="#">
+              <Link to='https://www.facebook.com/atashia.almo.399' target='_blank'>
                 <i class="fa-brands fa-square-facebook"></i>
-              </a>
+              </Link>
               <a href="#">
                 <i class="fa-brands fa-discord"></i>
               </a>
@@ -65,20 +68,22 @@ const Team = () => {
               <img src={Team3} id="vin" />
             </div>
             <h3>Vincent Serano</h3>
-            <p>Developer</p>
+            <p>Web Developer</p>
+           <p className='portfolio'><Link to='https://skinnyvin1.github.io/First-React-Deployment-Serrano/' target='_blank'>View Portfolio</Link></p>
             <div class="icons">
-              <a href="#">
+              <Link to="https://www.fb.com/simon.vicente02" target='_blank'>
                 <i class="fa-brands fa-square-facebook"></i>
-              </a>
-              <a href="#">
+              </Link>
+              <Link to='https://discord.com/users/730440208557932614' target='_blank'>
                 <i class="fa-brands fa-discord"></i>
-              </a>
-              <a href="#">
+              </Link>
+              <Link to='https://github.com/SkinnyVin1' target='_blank'>
                 <i class="fa-brands fa-square-github"></i>
-              </a>
-              <a href="#">
+              </Link>
+              <Link to='https://www.linkedin.com/in/vincent-serrano-80009114b/' target='_blank'>
                 <i class="fa-brands fa-linkedin"></i>
-              </a>
+              </Link>
+              
             </div>
           </div>
         </div>

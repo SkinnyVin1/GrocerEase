@@ -1,20 +1,23 @@
-.container{
+.contactContainer{
     margin-top: 5%;
     margin-bottom: 10%;
     width: 85%;
+    height: 70vh;
     background: #fff;
     border-radius: 6px;
-    padding: 20px 60px 30px 40px;
+    padding: 20px 100px 30px 40px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
     margin-left: 12%;
+    display: grid;
+    place-items: center;
   }
   
-  .container .content{
+  .contactContainer .content{
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
-  .container .content .left-side{
+  .contactContainer .content .left-side{
     width: 25%;
     height: 100%;
     display: flex;
@@ -52,7 +55,7 @@
     font-size: 14px;
     color: #afafb6;
   }
-  .container .content .right-side{
+  .contactContainer .content .right-side{
     width: 75%;
     margin-left: 75px;
   }
@@ -102,36 +105,41 @@
   .button input[type="button"]:hover{
     background: #82e08c;
   }
-  
+  #contact{
+    font-weight: 400;
+    font-size: 4rem;
+    text-align: start;
+    color: #92dd9a;
+  }
   @media (max-width: 950px) {
-    .container{
+    .contactContainer{
       width: 90%;
       padding: 30px 40px 40px 35px ;
     }
-    .container .content .right-side{
+    .contactContainer .content .right-side{
      width: 75%;
      margin-left: 55px;
   }
   }
   @media (max-width: 820px) {
-    .container{
+    .contactContainer{
       margin: 40px 0;
       height: 100%;
     }
-    .container .content{
+    .contactContainer .content{
       flex-direction: column-reverse;
     }
-   .container .content .left-side{
+   .contactContainer .content .left-side{
      width: 100%;
      flex-direction: row;
      margin-top: 40px;
      justify-content: center;
      flex-wrap: wrap;
    }
-   .container .content .left-side::before{
+   .contactContainer .content .left-side::before{
      display: none;
    }
-   .container .content .right-side{
+   .contactContainer .content .right-side{
      width: 100%;
      margin-left: 0;
    }
