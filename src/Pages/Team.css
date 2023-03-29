@@ -22,7 +22,7 @@
     color: #1f003b;
     cursor: pointer;
     transition: 0.3s;
-    background-color: #ffffff;
+    background: linear-gradient(#ffffff,  #ffffff);
     
   }
   .card .img-container {
@@ -61,8 +61,8 @@
    
   }
   .card:hover {
-    transition: all .2s ease-in-out;
     background: linear-gradient(#c0f6c5,  #49c956);
+    transition: all .2s ease-in-out ;
     color: #ffffff;
   }
   .card:hover .img-container {
