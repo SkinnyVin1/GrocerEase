@@ -75,7 +75,7 @@ const Navigationbar = () => {
             </Link>
           </li>
           <li>
-            <Link to='/group1_capstone'>
+            <Link to='/Cart'>
               <div className="icon-container">
                 <img src={Cart} alt="" />
                 <span>Cart</span>

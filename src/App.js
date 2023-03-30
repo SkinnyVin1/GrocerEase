@@ -11,6 +11,7 @@ import LoginPage from "./Pages/LoginPage";
 import Body from "./Pages/Body";
 import NavforMobile from "./Components/NavbarForMobile";
 import Register from "./Pages/Register";
+import Cart from "./Pages/Cart";
 
 function App() {
   // function redirectToHomePage() {
@@ -37,6 +38,7 @@ function App() {
           <Route path="/Shop" element={<Shop />}></Route>
           <Route path="/Login" element={<LoginPage />}></Route>
           <Route path="/Register" element={<Register />}></Route>
+          <Route path="/Cart" element={<Cart />}></Route>
         </Routes>
       </div>
     </BrowserRouter>
