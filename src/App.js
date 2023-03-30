@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./Pages/Home";
 import Navigationbar from "./Components/NavigationBar";
+import NavigationbarAdmin from "./Components/NavigationBarAdmin";
 import AboutUs from "./Pages/AboutUs";
 import Dashboard from "./Pages/Dashboard";
 import Orders from "./Pages/Orders";
@@ -9,6 +10,7 @@ import Shop from "./Pages/Shop";
 import LoginPage from "./Pages/LoginPage";
 import Body from "./Pages/Body";
 import NavforMobile from "./Components/NavbarForMobile";
+import Register from "./Pages/Register";
 
 function App() {
   // function redirectToHomePage() {
@@ -28,12 +30,13 @@ function App() {
         <Navigationbar />
         <NavforMobile></NavforMobile>
         <Routes>
-          <Route path="/" element={<Home />}></Route>
+          <Route path="/group1_capstone" element={<Body />}></Route>
           <Route path="/AboutUs" element={<AboutUs />}></Route>
           <Route path="/Dashboard" element={<Dashboard />}></Route>
           <Route path="/Orders" element={<Orders />}></Route>
           <Route path="/Shop" element={<Shop />}></Route>
           <Route path="/Login" element={<LoginPage />}></Route>
+          <Route path="/Register" element={<Register />}></Route>
         </Routes>
       </div>
     </BrowserRouter>

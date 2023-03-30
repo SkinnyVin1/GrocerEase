@@ -1,156 +1,142 @@
 import "../Pages/LoginPage.css";
 import Bg from "../Images/loginbg.png";
 import ShoImg from "../Images/shopping.png";
+
 import { Link } from "react-router-dom";
-import { useState, useRef, useEffect, useContext } from "react";
-import AuthContext from "../context/AuthProvider";
-import axios from "../api/axios";
-const LOGIN_URL = "/auth";
+import { useState } from "react";
+import axios from "axios";
 
 const LoginPage = () => {
-  const [showPassword, setShowPassword] = useState(false);
+  const [showPassword, setShowPassword] = useState([]);
+  const [warningText, setWarningText] = useState("");
 
   const togglePasswordVisibility = (event) => {
     event.preventDefault(); // Prevents the default form submission behavior
     setShowPassword(!showPassword);
   };
 
-  const { setAuth } = useContext(AuthContext);
+  // const [user, setUser] = useState([]); 1st Approach
 
-  const userRef = useRef();
-  const errRef = useRef();
+  // const LoginFunction = (e) => {
+  //   e.preventDefault();
+  //   let getData = new FormData();
+  //   getData.append("username", document.getElementById("user").value);
+  //   getData.append("password", document.getElementById("pass").value);
 
-  const [user, setUser] = useState("");
-  const [pwd, setPwd] = useState("");
-  const [errMsg, setErrMsg] = useState("");
-  const [success, setSuccess] = useState(false);
+  //   axios({ 
+  //     method: "POST",
+  //     url: "http://localhost/grocerease.db/validate.php",
+  //     data: getData,
+  //   }).then(function (response) {
+  //     if (response.data != "Login Failed") {
+  //       const username = response.data.username;
+  //       alert("Login Successfull, Go to Homepage?");
+  //       localStorage.setItem("mytime", response.data);
+  //       window.location.href = "/group1_capstone";
+  //       if(username == 'Admin'){
+  //         alert('logged in as Admin');
+  //       }else{
+  //         alert({username});
 
-  useEffect(() => {
-    userRef.current.focus();
-  }, []);
-
-  useEffect(() => {
-    setErrMsg("");
-  }, [user, pwd]);
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    // console.log(user, pwd);
-
-    try {
-      const response = await axios.post(
-        LOGIN_URL,
-        JSON.stringify({ user, pwd }),
-        {
-          headers: { "Content-Type": "application/json" },
-          withCredentials: true,
+  //       }
+  //     } else {
+  //       alert("Username or Password did not match");
+  //     }
+  //   });
+  // };
+  
+    const LoginFunction = (e) => {
+      e.preventDefault();
+      let getData = new FormData();
+      getData.append("username", document.getElementById("user").value);
+      getData.append("password", document.getElementById("pass").value);
+  
+      axios({
+        method: "POST",
+        url: "http://localhost/grocerease.db/validate.php",
+        data: getData,
+      }).then(function (response) {
+        if (response.data.message === "Login Successful") {
+          const username = response.data.username;
+          localStorage.setItem("mytime", username);
+          localStorage.setItem('isLoggedIn', true);
+          if(username === 'Admin'){
+            alert('logged in as Admin');
+            window.location.href = "/Shop"
+          } else {
+            alert('Login Sucessfull');
+            window.location.href = "/group1_capstone"
+          }
+        } else {
+          setWarningText("Username or Password did not match");
         }
-      );
-      console.log(JSON.stringify(response?.data));
-      // console.log(JSON.stringify(response));
-      const accessToken = response?.data?.accessToken;
-      const roles = response?.data?.roles;
-      setAuth({ user, pwd, roles, accessToken });
-      setUser("");
-      setPwd("");
-      setSuccess(true);
-    } catch (err) {
-      if (!err?.response) {
-        setErrMsg("No server Response");
-      } else if (err.response?.status === 400) {
-        setErrMsg("Missing Username or Password");
-      } else if (err.response?.status === 401) {
-        setErrMsg("Unauthorized");
-      } else {
-        setErrMsg("Login Failed");
-      }
-      errRef.current.focus();
-    }
+      });
   };
+  
 
+    
   return (
-    <>
-      {success ? (
-        <div>
-          <h1>Successfullt Logged In</h1>
-          <br />
-        </div>
-      ) : (
-        <div className="loginBody">
-          <img src={Bg} id="bg" />
-          <div className="loginContainer">
-            <div className="loginForm">
-              <div className="imgContent">
-                <img src={ShoImg} alt="" />
-              </div>
-              <div className="lForm">
-                <div className="welcome">
-                  <span>Welcome to</span>
-                  <h1>GrocerEase</h1>
-                  <ul>
-                    <li>
-                      <Link to="/">Go Back to Main Page</Link>
-                    </li>
-                  </ul>
+    <div className="loginBody">
+      <img src={Bg} id="bg" />
+      <div className="loginContainer">
+        <div className="loginForm">
+          <div className="imgContent">
+            <img src={ShoImg} alt="" />
+          </div>
+          <div className="lForm">
+            <div className="welcome">
+              <span>Welcome to</span>
+              <h1>GrocerEase</h1>
+              <ul>
+                <li>
+                  <Link to="/group1_capstone">Go Back to Main Page</Link>
+                </li>
+              </ul>
+            </div>
+            <img src={ShoImg} id="hideImg" />
+            <div className="logform">
+            {warningText && <p className="warningText">{warningText}</p>}
+            <form>
+                  <input
+                  type="text"
+                  placeholder="Username"
+                  className="inText"
+                  id="user"
+                  // autoComplete="off"
+                  required
+                />
+                <div className="passy">
+                  {/* <label htmlFor="password">Password:</label> */}
+                  <input
+                    type={showPassword ? "text" : "password"}
+                    id="pass"
+                    placeholder="Password"
+                    autoComplete="off"
+                    required
+                  />
+
+                  <div className="showForgot">
+                    <Link to="/" id="forgot">
+                      forgot password
+                    </Link>
+
+                    <button onClick={togglePasswordVisibility} id="showHide">
+                      {showPassword ? "Hide" : "Show"} password
+                    </button>
+                  </div>
                 </div>
-                <img src={ShoImg} id="hideImg" />
-                <div className="logform">
-                  <p
-                    ref={errRef}
-                    className={errMsg ? "errmsg" : "offscreen"}
-                    aria-live="assertive"
-                  >
-                    {errMsg}
-                  </p>
-                  <form onSubmit={handleSubmit}>
-                    {/* <label htmlFor="username">UserName</label> */}
-                    <input
-                      type="text"
-                      placeholder="Username"
-                      className="inText"
-                      id="username"
-                      ref={userRef}
-                      autoComplete="off"
-                      onChange={(e) => setUser(e.target.value)}
-                      value={user}
-                      required
-                    />
-                    <div className="passy">
-                      {/* <label htmlFor="password">Password:</label> */}
-                      <input
-                        type={showPassword ? "text" : "password"}
-                        id="password "
-                        placeholder="Password"
-                        onChange={(e) => setPwd(e.target.value)}
-                        value={pwd}
-                        required
-                      />
+                
+                <button onClick={LoginFunction}>Log In</button>
 
-                      <div className="showForgot">
-                        <Link to="/" id="forgot">
-                          forgot password
-                        </Link>
-
-                        <button
-                          onClick={togglePasswordVisibility}
-                          id="showHide"
-                        >
-                          {showPassword ? "Hide" : "Show"} password
-                        </button>
-                      </div>
-                    </div>
-
-                    <button>Log In</button>
-
-                    <Link to="/"> or create an account</Link>
-                  </form>
-                </div>
-              </div>
+                <Link to="/Register"> or create an account</Link>
+              </form>
             </div>
           </div>
         </div>
-      )}
-    </>
+      </div>
+    </div>
+    //   )}
+    // </>
   );
 };
 
