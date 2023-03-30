@@ -6,7 +6,7 @@ import Avatar from "../Images/21-avatar-outline.png";
 import Cart from "../Images/146-basket-trolley-shopping-card-outline.png";
 import Heart from "../Images/heart.png";
 
-const Navigationbar = () => {
+const NavigationbarAdmin = () => {
   const [activeLink, setActiveLink] = useState("link1");
   const changeColor = (link) => {
     setActiveLink(link);
@@ -18,7 +18,6 @@ const Navigationbar = () => {
   };
   const isLoggedIn = localStorage.getItem('isLoggedIn');
    function isLoggednot() {
-    
     if (isLoggedIn) {
       // redirect to profile page
       window.location.href = '/AboutUs';
@@ -51,16 +50,16 @@ const Navigationbar = () => {
               Shop
             </Link>
           </li>
-          <li style={linkStyle("link4")}>
+          {/* <li style={linkStyle("link4")}>
             <Link to="/Orders" onClick={() => changeColor("link4")}>
               Orders
             </Link>
-          </li>
-          {/* <li style={linkStyle("link5")}>
+          </li> */}
+          <li style={linkStyle("link5")}>
             <Link to="/Dashboard" onClick={() => changeColor("link5")}>
               Dashboard
             </Link>
-          </li> */}
+          </li>
         </ul>
       </div>
 
@@ -96,4 +95,4 @@ const Navigationbar = () => {
   );
 };
 
-export default Navigationbar;
+export default NavigationbarAdmin;
