@@ -3,8 +3,8 @@ import Bg from "../Images/loginbg.png";
 import ShoImg from "../Images/shopping.png";
 
 import { Link } from "react-router-dom";
-import { useState, useRef, useEffect, useContext } from "react";
-import axios from "../api/axios";
+import { useState } from "react";
+import axios from "axios";
 
 const LoginPage = () => {
   const [showPassword, setShowPassword] = useState([]);
@@ -23,11 +23,11 @@ const LoginPage = () => {
     getData.append("password", document.getElementById("pass").value);
     axios({
       method: "POST",
-      url: "http://localhost/grocerease_db/validate.php",
+      url: "http://localhost/grocerease.db/validate.php",
       data: getData,
     }).then(function (response) {
       if (response.data != "Login Failed") {
-        alert("Wow");
+        alert("Login Successfull, Go to Homepage?");
         localStorage.setItem("mytime", response.data);
         window.location.href = "/group1_capstone";
       } else {
@@ -69,7 +69,7 @@ const LoginPage = () => {
                   {/* <label htmlFor="password">Password:</label> */}
                   <input
                     type={showPassword ? "text" : "password"}
-                    id="pass "
+                    id="pass"
                     placeholder="Password"
                     required
                   />
