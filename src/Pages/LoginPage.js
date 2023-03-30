@@ -8,34 +8,73 @@ import axios from "axios";
 
 const LoginPage = () => {
   const [showPassword, setShowPassword] = useState([]);
+  const [warningText, setWarningText] = useState("");
 
   const togglePasswordVisibility = (event) => {
     event.preventDefault(); // Prevents the default form submission behavior
     setShowPassword(!showPassword);
   };
 
-  // const [user, setUser] = useState([]);
+  // const [user, setUser] = useState([]); 1st Approach
 
-  const LoginFunction = (e) => {
-    e.preventDefault();
-    let getData = new FormData();
-    getData.append("username", document.getElementById("user").value);
-    getData.append("password", document.getElementById("pass").value);
-    axios({
-      method: "POST",
-      url: "http://localhost/grocerease.db/validate.php",
-      data: getData,
-    }).then(function (response) {
-      if (response.data != "Login Failed") {
-        alert("Login Successfull, Go to Homepage?");
-        localStorage.setItem("mytime", response.data);
-        window.location.href = "/group1_capstone";
-      } else {
-        alert("Username or Password did not match");
-      }
-    });
+  // const LoginFunction = (e) => {
+  //   e.preventDefault();
+  //   let getData = new FormData();
+  //   getData.append("username", document.getElementById("user").value);
+  //   getData.append("password", document.getElementById("pass").value);
+
+  //   axios({ 
+  //     method: "POST",
+  //     url: "http://localhost/grocerease.db/validate.php",
+  //     data: getData,
+  //   }).then(function (response) {
+  //     if (response.data != "Login Failed") {
+  //       const username = response.data.username;
+  //       alert("Login Successfull, Go to Homepage?");
+  //       localStorage.setItem("mytime", response.data);
+  //       window.location.href = "/group1_capstone";
+  //       if(username == 'Admin'){
+  //         alert('logged in as Admin');
+  //       }else{
+  //         alert({username});
+
+  //       }
+  //     } else {
+  //       alert("Username or Password did not match");
+  //     }
+  //   });
+  // };
+  
+    const LoginFunction = (e) => {
+      e.preventDefault();
+      let getData = new FormData();
+      getData.append("username", document.getElementById("user").value);
+      getData.append("password", document.getElementById("pass").value);
+  
+      axios({
+        method: "POST",
+        url: "http://localhost/grocerease.db/validate.php",
+        data: getData,
+      }).then(function (response) {
+        if (response.data.message === "Login Successful") {
+          const username = response.data.username;
+          localStorage.setItem("mytime", username);
+          localStorage.setItem('isLoggedIn', true);
+          if(username === 'Admin'){
+            alert('logged in as Admin');
+            window.location.href = "/Shop"
+          } else {
+            alert('Login Sucessfull');
+            window.location.href = "/group1_capstone"
+          }
+        } else {
+          setWarningText("Username or Password did not match");
+        }
+      });
   };
+  
 
+    
   return (
     <div className="loginBody">
       <img src={Bg} id="bg" />
@@ -50,19 +89,20 @@ const LoginPage = () => {
               <h1>GrocerEase</h1>
               <ul>
                 <li>
-                  <Link to="/">Go Back to Main Page</Link>
+                  <Link to="/group1_capstone">Go Back to Main Page</Link>
                 </li>
               </ul>
             </div>
             <img src={ShoImg} id="hideImg" />
             <div className="logform">
-              <form>
-                <input
+            {warningText && <p className="warningText">{warningText}</p>}
+            <form>
+                  <input
                   type="text"
                   placeholder="Username"
                   className="inText"
                   id="user"
-                  autoComplete="off"
+                  // autoComplete="off"
                   required
                 />
                 <div className="passy">
@@ -71,6 +111,7 @@ const LoginPage = () => {
                     type={showPassword ? "text" : "password"}
                     id="pass"
                     placeholder="Password"
+                    autoComplete="off"
                     required
                   />
 
@@ -84,10 +125,10 @@ const LoginPage = () => {
                     </button>
                   </div>
                 </div>
-
+                
                 <button onClick={LoginFunction}>Log In</button>
 
-                <Link to="/"> or create an account</Link>
+                <Link to="/Register"> or create an account</Link>
               </form>
             </div>
           </div>
