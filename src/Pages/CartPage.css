@@ -17,8 +17,6 @@
   
   ion-icon, span { display: inline-block; }
   
-  label, img { display: block; }
-  
   input {
     font: inherit;
     width: 100%;
