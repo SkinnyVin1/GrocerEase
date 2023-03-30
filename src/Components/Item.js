@@ -5,6 +5,20 @@ const Item = (props) => {
   const [isOpen, setIsOpen] = useState(false);
   const [open, setOpen] = useState('none');
   const [quantity, setQuantity] = useState(0);
+  const [cart, setCart] = useState([]);
+
+
+  function addToCart(){
+    cart.push({Products: props.prodName, Price: props.price});
+    setCart(cart);
+    localStorage.setItem("cartStorage", JSON.stringify(cart));
+    showCart();
+  }
+  function showCart(){
+    cart.forEach(function(itemness){
+      alert(itemness.Products + itemness.Price)
+    })
+  }
 
   const prodQuantity = (e) => {
     const btnId = e.target.id;
@@ -89,7 +103,7 @@ const Item = (props) => {
                   <button id="plus" onClick={prodQuantity}>+</button>
                 </div>
                 <div className="modal-buy">
-                  <button className="modal-AddtoCart"><img src={props.cart} /><h2>Add to Cart</h2></button>
+                  <button className="modal-AddtoCart" onClick={() => addToCart()}><img src={props.cart} /><h2>Add to Cart</h2></button>
                   <button className="modal-buyNow"><h2>Buy Now</h2></button>
                 </div>
               </div>
