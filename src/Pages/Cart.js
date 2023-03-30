@@ -23,7 +23,7 @@ const Cart = () => {
     
               <div class="product-card">
     
-                <div class="card">
+                <div class="card-cart">
     
                   <div class="img-box">
                     <img src={product1}  class="product-img"/>
@@ -66,7 +66,7 @@ const Cart = () => {
     
               <div class="product-card">
     
-                <div class="card">
+                <div class="card-cart">
     
                   <div class="img-box">
                     <img src={product2} width="80px" class="product-img"/>
