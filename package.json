@@ -1,7 +1,7 @@
 {
-  "homepage": "http://skinnyvin1.github.io/group1_capstone",
   "name": "group1-capstone",
   "version": "0.1.0",
+  "homepage": "http://skinnyvin1.github.io/group1_capstone",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.3.0",

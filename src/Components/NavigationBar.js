@@ -83,12 +83,14 @@ const Navigationbar = () => {
             </Link>
           </li>
           <li>
-            <button onClick={isLoggednot}>
+            {/* <button onClick={isLoggednot}> */}
+          <Link to='/Login'>
               <div className="icon-container">
                 <img src={Avatar} alt="" />
                 <span>Account</span>
               </div>
-            </button>
+            </Link>
+            {/* </button> */}
           </li>
         </ul>
       </div>
