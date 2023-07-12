@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/grocerease/static/css/main.6bb9926e.css",
-    "main.js": "/grocerease/static/js/main.e386b2bc.js",
+    "main.css": "/grocerease/static/css/main.11b3066b.css",
+    "main.js": "/grocerease/static/js/main.bfaf2250.js",
     "static/js/787.e912a4dc.chunk.js": "/grocerease/static/js/787.e912a4dc.chunk.js",
     "static/media/veggie.jpg": "/grocerease/static/media/veggie.4e900a1376562b307877.jpg",
     "static/media/breadcard.jpg": "/grocerease/static/media/breadcard.9ba6e6b2e1452a1e9e17.jpg",
@@ -79,12 +79,12 @@
     "static/media/fa-v4compatibility.ttf": "/grocerease/static/media/fa-v4compatibility.6c0a7b774ffa1cf0a059.ttf",
     "static/media/fa-v4compatibility.woff2": "/grocerease/static/media/fa-v4compatibility.497d535001197a9c5b38.woff2",
     "index.html": "/grocerease/index.html",
-    "main.6bb9926e.css.map": "/grocerease/static/css/main.6bb9926e.css.map",
-    "main.e386b2bc.js.map": "/grocerease/static/js/main.e386b2bc.js.map",
+    "main.11b3066b.css.map": "/grocerease/static/css/main.11b3066b.css.map",
+    "main.bfaf2250.js.map": "/grocerease/static/js/main.bfaf2250.js.map",
     "787.e912a4dc.chunk.js.map": "/grocerease/static/js/787.e912a4dc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6bb9926e.css",
-    "static/js/main.e386b2bc.js"
+    "static/css/main.11b3066b.css",
+    "static/js/main.bfaf2250.js"
   ]
 }
