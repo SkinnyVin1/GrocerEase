@@ -57,7 +57,7 @@ const LoginPage = () => {
               <h1>GrocerEase</h1>
               <ul>
                 <li>
-                  <Link to="/group1_capstone">Go Back to Main Page</Link>
+                  <Link to="/grocerease">Go Back to Main Page</Link>
                 </li>
               </ul>
             </div>
