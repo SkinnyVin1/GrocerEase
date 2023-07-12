@@ -37,7 +37,7 @@ const Navigationbar = () => {
       <div className="routes">
         <ul>
           <li style={linkStyle("link1")}>
-            <Link to="/group1_capstone" onClick={() => changeColor("link1")}>
+            <Link to="/grocerease" onClick={() => changeColor("link1")}>
               Home
             </Link>
           </li>
