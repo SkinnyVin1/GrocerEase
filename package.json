@@ -1,7 +1,7 @@
 {
   "name": "group1-capstone",
   "version": "0.1.0",
-  "homepage": "http://skinnyvin1.github.io/group1_capstone",
+  "homepage": "http://skinnyvin1.github.io/grocerease",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.3.0",

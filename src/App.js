@@ -31,7 +31,7 @@ function App() {
         <Navigationbar />
         <NavforMobile></NavforMobile>
         <Routes>
-          <Route path="/group1_capstone" element={<Body />}></Route>
+          <Route path="/grocerease" element={<Body />}></Route>
           <Route path="/AboutUs" element={<AboutUs />}></Route>
           <Route path="/Dashboard" element={<Dashboard />}></Route>
           <Route path="/Orders" element={<Orders />}></Route>
